@@ -10,7 +10,7 @@
   
   <title>
     
-      Hexo
+      Series | Hexo
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -192,37 +192,51 @@
 </header>
 
     <div id="article-banner">
-  <h2>Archives</h2>
-  <p class="post-date">Archives</p>
+  <h2>Series</h2>
+  <p class="post-date">Series by Categories</p>
 </div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2023
-  </h1>
-  <div class="section-list">
-    
-    
-      <div class="section-list-item">
-        <a href="/2023/08/29/hello-world/" class="archive-title">Hello World</a>
-        <p class="archive-date">08-29</p>
-      </div>
-    
+
+
+
+
+<main class="app-body">
+  <div id="category-cloud">
+      
+        <a class="category0" data-name="category-Hello World">Hello World</a>
+      
   </div>
-</section>
+    
+  
+    <div class="category-list">
+      <h3 class="category-name" id="category-Hello World">Hello World</h3>
+      
+      
+        <ul class="category-preview">
+          <li>
+            <a href="/2023/08/29/hello-world/">Hello World</a>
+          </li>
+        </ul>
+      
+    </div>
   
 </main>
 
 <script>
   (function () {
-    var url = 'http://example.com/archives/2023/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
+    var url = 'http://example.com/series/index.html'
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+    var category = location.hash.replace('#', '')
+    if (category) {
+      var categoryId = "#category-" + category;
+      $("html, body").animate({
+        scrollTop: $(categoryId).offset().top 
+      }, 400)
+    }
   })();
 </script>
+
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
