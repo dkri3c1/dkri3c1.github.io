@@ -1,6 +1,6 @@
 ---
-title: Hello World
-description: A description of this category
+title: SCAICT
+description: SCAICT experience
 image:
 
 # Badge style
