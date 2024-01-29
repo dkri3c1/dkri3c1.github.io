@@ -1,8 +1,8 @@
 ---
 title: Hello World
-description: Welcome to Hugo Theme Stack
+description: Hello World
 slug: hello-world
-date: 2022-03-06 00:00:00+0000
+date: 2024-01-29 
 image: cover.jpg
 categories:
     - test
