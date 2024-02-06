@@ -16,9 +16,9 @@ url = "https://github.com/dkri3c1"
 icon = "brand-github"
 
 [[social]]
-identifier = "twitter"
+identifier = "Instagram"
 name = "Instagram"
 url = "https://www.instagram.com/"
 
 [social.params]
-icon = "brand-twitter"
+icon = "ig"
