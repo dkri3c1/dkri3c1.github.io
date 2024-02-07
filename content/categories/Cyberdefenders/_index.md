@@ -1,10 +1,10 @@
 ---
 title: Cyberdefenders
-description: Foreniscs Labs
+description: Forensics Labs Writes up
 image: image.png
 
 # Badge style
 style:
-    background: "#0000FF"
+    background: "#2a9d8f"
     color: "#fff"
 ---
