@@ -1,7 +1,7 @@
 ---
 title: SCAICT
 description: SCAICT experience
-image:
+image: zaCAT.png
 
 # Badge style
 style:

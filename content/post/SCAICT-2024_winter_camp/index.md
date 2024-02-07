@@ -9,6 +9,7 @@ tags:
 categories:
     - SCAICT
 weight: 5
+suffix: "3"
 ---
 ## 前言
 這邊寄放了我在寒訓擔任資安講師遇到的趣事
