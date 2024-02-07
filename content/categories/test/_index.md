@@ -1,7 +1,7 @@
 ---
 title: test
 description: A description of this category
-image:
+image: mQNjkSj.png
 
 # Badge style
 style:

@@ -3,7 +3,7 @@ title: Hello World
 description: Hello World
 slug: hello-world
 date: 2024-01-29 
-image: cover.jpg
+image: cover.png
 categories:
     - test
 tags:
