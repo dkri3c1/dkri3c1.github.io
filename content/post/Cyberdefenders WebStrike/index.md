@@ -101,3 +101,8 @@ Understanding the value of compromised data assists in prioritizing incident res
 
 
 ``ans : passwd``
+
+
+## 後記
+
+數位鑑識好玩:D
