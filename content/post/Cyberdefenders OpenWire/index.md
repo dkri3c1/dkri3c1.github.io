@@ -1,14 +1,14 @@
 ---
 title: Cyberdefenders - OpenWire
-date: 2023-02-07
 description: Cyberdefenders Lab Writes up
-slug: Cyberdefenders Writes up
+slug: Cyberdefenders Lab Writes up
+date: 2024-02-07
 image: cover.png
-tags: 
-    - Cyberdefenders
 categories:
     - Cyberdefenders
-weight: 1  
+tags:
+    - Cyberdefenders
+weight: 1       
 ---
 
 
