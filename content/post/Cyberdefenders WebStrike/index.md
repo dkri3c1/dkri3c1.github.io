@@ -1,7 +1,6 @@
 ---
 title: Cyberdefenders - WebStrike
 description: Cyberdefenders Lab Writes up
-slug: Cyberdefenders Lab Writes up
 date: 2024-02-08
 image: cover.png
 categories:
