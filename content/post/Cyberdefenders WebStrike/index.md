@@ -22,7 +22,7 @@ Understanding the geographical origin of the attack aids in geo-blocking measure
 ![](image-1.png)
 
 發現只有兩個，於是就去tcp看有沒有攻擊的相關痕跡   
-發現 ``Stream 17`` 有
+發現 ``Stream 13`` 有
 ![](image.png)
 
 接下來就看誰是攻擊者ㄌ
