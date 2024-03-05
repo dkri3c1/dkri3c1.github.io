@@ -1,8 +1,8 @@
 ---
-title: "about"
+title: "About"
 date: 2023-01-29
-layout: "about"
-slug: "about"
+layout: "About"
+slug: "About"
 menu:
     main:
         weight: 2
