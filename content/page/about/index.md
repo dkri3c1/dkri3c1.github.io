@@ -20,6 +20,7 @@ menu:
 - 2023 HITCON 社群擺攤 中部電資聯合會議SCAICT
 - 2023 AIS3 club
 - 112 中部電資聯合會議SCAICT 資訊組
+- 2024 SITCON 會眾
 
 ## 講師經歷 
 
