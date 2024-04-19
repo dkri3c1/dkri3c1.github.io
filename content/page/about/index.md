@@ -39,7 +39,7 @@ menu:
 
 ## 其他
 
-- 2024 HITCON ZeroDay 通報 110 個以上漏洞
+- 2024 HITCON ZeroDay 通報 140 個以上漏洞
 - 112台中高工資訊科學會機動組組長
 - 台灣好厲駭學員 8th
 - 戰隊 m0nk3y_1n_tc1vs成員
