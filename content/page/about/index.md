@@ -9,6 +9,7 @@ menu:
         params: 
             icon: about
 ---
+
 ## 為什麼想要弄這個網站
 我是一個很常在活動結束後就忘記一切的金魚腦,於是我打算利用這個blog記錄我的青春或CTF的writes up
 
