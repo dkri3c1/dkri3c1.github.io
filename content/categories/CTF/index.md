@@ -1,6 +1,6 @@
 ---
 title: CTF
-description: CTF
+description: CTF I participate in
 image: images.jpg
 
 # Badge style
