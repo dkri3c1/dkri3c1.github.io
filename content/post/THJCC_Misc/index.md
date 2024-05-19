@@ -27,12 +27,18 @@ suffix: "3"
 
 Author : dkri3c1
 ```
+
 ![chal_wireshark](yuanshen_question.png)
-開始撈封包www，會發現第`8`個封包開始便嘗試登入帳號
+
+          開始撈封包www，會發現第`8`個封包開始便嘗試登入帳號
 
 ![chal_wireshark1](wireshark.png)
 
-預期解是觀察封包內容並且拿到正確的帳號密碼:
+
+
+
+
+預期解是觀察封包內容並且拿到正確的帳號密碼(而非一個一個爆破):
 
 `name=Frieren&password=B3stan1me` (芙莉蓮好看owob)
 
