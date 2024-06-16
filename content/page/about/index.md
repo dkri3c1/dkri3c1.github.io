@@ -36,10 +36,10 @@ menu:
 
 ## 競賽
 
-- 2023 MyFirstCTF rk.11
-- 2023 T貓盃決賽入圍(卡到段考,哭ㄚ)
-- 第 54 屆全國技能競賽中區分區賽網路安全 - rk.2
-- 2024 AIS3-Pre-exam rk.45
+- 2023 MyFirstCTF rk.11 user: dkriecl_ue
+- 2023 T貓盃決賽入圍(卡到段考,哭ㄚ) user:dkri3c1
+- 第 54 屆全國技能競賽中區分區賽網路安全 - rk.2 Team: 台中高工
+- 2024 AIS3-Pre-exam rk.45 user: dkri3c1
 
 ## 證照
 
