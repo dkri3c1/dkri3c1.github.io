@@ -10,18 +10,15 @@ tags:
 weight: 1       
 ---
 
-AIS3 Pre-exam 2024 WP
+### 前言
 
----
-author: dkri3c1
----
+從去年的150多名到今天的45名，中間經過了無數次的挫折，終於在資安上面有一點起色了，但進步的空間還是很大，期許自己明年可以打到前30名吧www
 
-還有很多努力的空間owob
 ![image](https://hackmd.io/_uploads/Hy--220L0.png)
 
-# Misc
+## Misc
 
-## welcome
+### welcome
 
 flag就在上面owob
 
@@ -29,7 +26,7 @@ flag就在上面owob
 
 flag:  AIS3{Welc0me_to_AIS3_PreExam_2o24!}
 
-## Three Dimensional Secret
+### Three Dimensional Secret
 
 之前打 picoCTF 好像有看過這種題型
 
@@ -45,7 +42,7 @@ wireshark 直接開啟之後 隨便點一個 TCP 封包來看
 
 flag: AIS3{b4d1y_tun3d_PriN73r}
 
-## Emoji Console
+### Emoji Console
 
 點進去題目發現很多 emoji，看到右邊的 ⭐ = * 及 🐍 = python 
 
@@ -424,7 +421,7 @@ cat: templates: Is a directory
 
 flag: AIS3{🫵🪡🉐🤙🤙🤙👉👉🚩👈👈}
 
-## Quantum Nim Heist
+Quantum Nim Heist
 
 跟機器人玩遊戲，只要你是最後一個拿到石頭的，你就會拿到flag
 
@@ -433,9 +430,9 @@ flag: AIS3{🫵🪡🉐🤙🤙🤙👉👉🚩👈👈}
 
 AIS3{Ar3_y0u_a_N1m_ma57er_0r_a_Crypt0_ma57er?} 
 
-# Crypto
+## Crypto
 
-## babyRSA
+### babyRSA
 
 source.py:
 
@@ -513,11 +510,12 @@ https://hackmd.io/@toxicpie9/r1B-fa1p2
 
 Flag: AIS3{NeverUseTheCryptographyLibraryImplementedYourSelf}
 
-##
 
-# Web
 
-## Evil Calculator
+## Web
+
+
+### Evil Calculator
 
 source.py:
 
@@ -558,9 +556,9 @@ BTW 這題我第一次解的解法忘記ㄌ，是在寫 wp 的時候另外找到
 
 flag: AIS3{7RiANG13_5NAK3_I5_50_3Vi1}
 
-# Reverse
+## Reverse
 
-## The Long Print
+### The Long Print
 
 發現一個程式會自動噴 flag 但是 sleep 的時間是 20000秒 ， 我們的目標是把它 patch到 1 秒
 
@@ -574,7 +572,7 @@ BTW 他最後執行完會跳掉，所以要注意他噴的東西。
 
 flag:AIS3{You_are_the_master_of_time_management!!!!?}
 
-## 火拳のエース
+火拳のエース
 
 開 main 之後有一個 print_flag 先把時間 patch 掉
 
@@ -687,9 +685,8 @@ print(string4)
 flag: AIS3{G0D_D4MN_4N9R_15_5UP3R_P0W3RFU1!!!}
 
 
-# pwn
-
-## mathter
+## pwn
+### mathter
 
 先看 main 長怎樣
 
@@ -748,7 +745,7 @@ flag: AIS3{0mg_k4zm4_mu57_b3_k1dd1ng_m3_2e89c9}
 
 # 賽後解 (自用)
 
-## Ebook Parser
+Ebook Parser
 
 這題其實是 XXE 的漏洞，其實賽中的時候有想到，因為我在上傳 zip 檔的時候他會報一些 xml 的 error，但是最後覺得不太會考這種冷門的東西所以就略過他了QQ，然後也沒有想到 fb2 這種檔案格式
 
