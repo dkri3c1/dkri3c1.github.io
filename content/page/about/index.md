@@ -25,7 +25,7 @@ menu:
 - 112 中部電資聯合會議SCAICT 資訊組
 - 2024 SITCON 會眾
 
-## 講者&助教經歷 
+## 講者&助教經歷
 
 - 2023 SCAICT十一月主題課程Misc教學講師
 - 2023 SITCON HOC 雲林場助教
@@ -50,7 +50,6 @@ menu:
 - GEPT 全民英檢 中級
 - 電腦硬體裝修 丙級
 
-
 ## 其他
 
 - HITCON ZeroDay 通報 170 個以上漏洞
@@ -59,4 +58,3 @@ menu:
 - 戰隊 m0nk3y_1n_tc1vs成員
 - 戰隊 B33F 50UP成員
 - 2024 台灣高中職資安聯合競賽 THJCC CTF 出題者
-
