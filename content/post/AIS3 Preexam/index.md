@@ -573,7 +573,7 @@ BTW 他最後執行完會跳掉，所以要注意他噴的東西。
 
 flag:AIS3{You_are_the_master_of_time_management!!!!?}
 
-火拳のエース
+### 火拳のエース
 
 開 main 之後有一個 print_flag 先把時間 patch 掉
 
