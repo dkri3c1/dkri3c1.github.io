@@ -423,7 +423,7 @@ cat: templates: Is a directory
 
 flag: AIS3{🫵🪡🉐🤙🤙🤙👉👉🚩👈👈} (編碼問題)
 
-Quantum Nim Heist
+### Quantum Nim Heist
 
 跟機器人玩遊戲，只要你是最後一個拿到石頭的，你就會拿到flag
 
