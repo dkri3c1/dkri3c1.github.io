@@ -2,7 +2,7 @@
 title: AIS3 2024 心得
 description: AIS3 心得
 date: 2024-07-29
-image: cover.png
+image: cover.jpg
 categories:
     - AIS3
 tags:
@@ -10,7 +10,7 @@ tags:
 weight: 1       
 ---
 
-### 前言
+## 前言
 
 這是我第一次參加 AIS3 , 我將在這一篇 POST 中寫下我記憶猶新的事情 , 然後我沒有打進總統府跟數發部= =
 ![LCE](https://hackmd.io/_uploads/ryiF_DntA.png)
@@ -20,7 +20,7 @@ weight: 1
 ![LCE3](https://hackmd.io/_uploads/rJPqOPhYR.png)
 
 
-### 專題
+## 專題
 我的組別是 <font color="#f00">軟體、網頁及IoT安全</font> ,我們一開始的目標原本是<font color="#f00">最佳專題</font>，但我們一看到其他組開始陸陸續續挖到 0 DAY 之後開始意識到事情沒那麼簡單了 
 
 ![Screenshot_2024-08-03_at_12.12.45_PM](https://hackmd.io/_uploads/HygDiPntA.png)
@@ -33,14 +33,14 @@ weight: 1
 
 
 
-### 發表
+## 發表
 在發表的時候 , 我主講的部分是 patch 的部分 , 雖然在台上的時候因為<font color="#f00">緊張而加快自己的速度</font> , 但在整體的發表上都沒有<font color="#f00">太多的錯誤</font>
 
 ![1722647134912](https://hackmd.io/_uploads/H1_WLPhKC.png)
 
 
 
-### 結論&反思
+## 結論&反思
 在還沒有實際挖掘過產品漏洞前 , 我認為一切都像助教說的那樣容易 . 這一張可以詮釋我的感想xDD
 
 ![1722657815589](https://hackmd.io/_uploads/r1tlrDnYA.png)
