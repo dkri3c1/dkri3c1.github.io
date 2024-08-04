@@ -13,6 +13,7 @@ weight: 1
 ## 前言
 
 這是我第一次參加 AIS3 , 我將在這一篇 POST 中寫下我記憶猶新的事情 , 然後我沒有打進總統府跟數發部= =
+
 ![LCE](https://hackmd.io/_uploads/ryiF_DntA.png)
 
 ![LCE2](https://hackmd.io/_uploads/ryE9_D2KA.png)
