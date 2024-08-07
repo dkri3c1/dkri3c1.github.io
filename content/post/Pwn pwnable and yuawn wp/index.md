@@ -15,7 +15,7 @@ weight: 1
 
 設定環境:
 
-``` python=
+``` py
 context(arch='i386',os='linux')
 ```
 
@@ -63,7 +63,7 @@ seccomp:
 
 ### exploit
 
-``` python=
+``` py
 from pwn import *
 
 context(arch='amd64',os='linux')
@@ -106,7 +106,7 @@ disas main:
 
 ### exploit
 
-``` python=
+``` py
 
 from pwn import *
 

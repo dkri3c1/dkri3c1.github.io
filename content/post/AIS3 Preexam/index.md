@@ -436,7 +436,7 @@ AIS3{Ar3_y0u_a_N1m_ma57er_0r_a_Crypt0_ma57er?}
 
 ### babyRSA
 
-``` python=
+``` py
 import random
 from Crypto.Util.number import getPrime
 from secret import flag
@@ -490,7 +490,7 @@ Encrypted: [59582983136368434856816799733313446746433796034384724221174424464969
 
 solve.py:
 
-``` python=
+``` py
 from Crypto.Util.number import *
 e,n=(64917055846592305247490566318353366999709874684278480849508851204751189365198819392860386504785643859122396657301225094708026391204100352682992979425763157452255909781003406602228716107905797084217189131716198785709124050278116966890968003294485934472496151582084561439957513571043497031319413889856520421733, 115676743153063753482251273007095369919613374531038288437295760314264647231038870203981488393720761532040569270340726478402172283300622527884543078194060647393394510524980830171230330673500741683492143805583694395504141751460090539868114454005046898551218623342425465650881666420408703144859108346202894384649)
 
@@ -520,7 +520,7 @@ Flag: AIS3{NeverUseTheCryptographyLibraryImplementedYourSelf}
 
 source.py:
 
-``` python=
+``` py
 from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
@@ -583,7 +583,7 @@ patch 完之後回到 main 有一個 complex_function ， 然後叫 GPT 幫我�
 
 
 complex_function.py:
-``` python=
+``` py
 import sys
 
 def complex_function(param_1, param_2):
@@ -613,7 +613,7 @@ def complex_function(param_1, param_2):
 我們的目標是拿到原本的 buffer0 buffer1 buffer2 buffer3，所以先用 complex_function 拿到我們要的被 xor 過後的 cipher，接著再利用 xor 的特性拿到 buffer 的原數值。
 
 solve.py:
-``` python=
+``` py
 
 import sys
 
@@ -727,7 +727,7 @@ flag: AIS3{G0D_D4MN_4N9R_15_5UP3R_P0W3RFU1!!!}
 
 
 solve.py:
-``` python=
+``` py
 # python3
 from pwn import *
 
