@@ -15,7 +15,7 @@ weight: 1
 
 設定環境:
 
-``` py=
+``` python=
 context(arch='i386',os='linux')
 ```
 
@@ -48,19 +48,22 @@ gem install seccomp-tools
 ### Recon
 
 file:
+
 ![image](https://hackmd.io/_uploads/SJLwfuk5R.png)
 
 r2:
+
 ![image](https://hackmd.io/_uploads/r1FOMdy5R.png)
 
 發現 sc 的部分是全域變數，然後他有給你位置，並且下面有一個 I give you bof 是用 gets 去讀，並且大小為 0x10+0x8
 
 seccomp:
+
 ![image](https://hackmd.io/_uploads/BkPAGOJqR.png)
 
 ### exploit
 
-```py=
+``` python=
 from pwn import *
 
 context(arch='amd64',os='linux')
@@ -81,24 +84,30 @@ labs: https://pwnable.tw/static/chall/orw
 ### Recon
 
 file: 
+
 ![image](https://hackmd.io/_uploads/B1EEY7150.png)
 
 checksec:
+
 ![image](https://hackmd.io/_uploads/BJkBFX1qC.png)
 
 exec: 
+
 ![image](https://hackmd.io/_uploads/BJOQsQ1q0.png)
 
 seccomp:
+
 ![image](https://hackmd.io/_uploads/S1gYoXJ90.png)
 
 disas main:
+
 ![image](https://hackmd.io/_uploads/HJR5smJcC.png)
 
 
 ### exploit
 
-``` py=
+``` python=
+
 from pwn import *
 
 context(arch='i384',os='linx')
