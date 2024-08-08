@@ -1,6 +1,6 @@
 ---
-title: pwnable orw & yuawn orw Writes up
-description: pwnable orw & yuawn orw Writes up
+title: lys rop2 Writes up
+description: lys rop2 Writes up
 date: 2024-08-08
 image: image.png
 categories:

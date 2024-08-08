@@ -1,6 +1,6 @@
 ---
-title: lys rop1
-description: lys rop1
+title: lys rop1 Writes up
+description: lys rop1 Writes up
 date: 2024-08-07
 image: image.png
 categories:
