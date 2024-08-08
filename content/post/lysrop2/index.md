@@ -11,9 +11,7 @@ weight: 1
 ---
 
 
-## demo lys rop2
-
-## Stack Migration
+### Stack Migration
 
 當今天在串 rop gadget 的時候發現字串的大小不夠你塞，你可以用 leave ; ret 去跳到另外一個有空間 Stack 上
 

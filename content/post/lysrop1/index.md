@@ -10,9 +10,6 @@ tags:
 weight: 1       
 ---
 
-
-## demo lys rop_lab1
-
 ### Recon
 
 file:
