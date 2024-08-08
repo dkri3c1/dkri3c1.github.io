@@ -113,7 +113,7 @@ r.sendlineafter('?','/bin/sh'+p)
 
 ![solve2](https://hackmd.io/_uploads/BJWhfRW9A.png)
 
-### exp
+## exploit
 
 ```py
 from pwn import *
