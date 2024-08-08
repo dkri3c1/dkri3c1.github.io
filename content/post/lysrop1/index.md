@@ -93,6 +93,8 @@ exp.py:
 ``` py=
 from pwn import *
 
+context(arch="amd64")
+
 r=process('./rop1')
 
 
