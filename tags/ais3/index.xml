@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AIS3 on dkri3c1's Blog</title><link>https://dkri3c1.github.io/tags/ais3/</link><description>Recent content in AIS3 on dkri3c1's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 29 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dkri3c1.github.io/tags/ais3/index.xml" rel="self" type="application/rss+xml"/><item><title>AIS3 2024 心得</title><link>https://dkri3c1.github.io/p/ais3-2024-%E5%BF%83%E5%BE%97/</link><pubDate>Mon, 29 Jul 2024 00:00:00 +0000</pubDate><guid>https://dkri3c1.github.io/p/ais3-2024-%E5%BF%83%E5%BE%97/</guid><description>&lt;img src="https://dkri3c1.github.io/p/ais3-2024-%E5%BF%83%E5%BE%97/cover.jpg" alt="Featured image of post AIS3 2024 心得" />&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>這是我第一次參加 AIS3 , 我將在這一篇 POST 中寫下我記憶猶新的事情 , 然後我沒有打進總統府跟數發部= =&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/ryiF_DntA.png"
+loading="lazy"
+alt="LCE"
+>&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/ryE9_D2KA.png"
+loading="lazy"
+alt="LCE2"
+>&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/rJPqOPhYR.png"
+loading="lazy"
+alt="LCE3"
+>&lt;/p>
+&lt;h2 id="專題">專題&lt;/h2>
+&lt;p>我的組別是 &lt;font color="#f00">軟體、網頁及IoT安全&lt;/font> ,我們一開始的目標原本是&lt;font color="#f00">最佳專題&lt;/font>，但我們一看到其他組開始陸陸續續挖到 0 DAY 之後開始意識到事情沒那麼簡單了&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/HygDiPntA.png"
+loading="lazy"
+alt="Screenshot_2024-08-03_at_12.12.45_PM"
+>&lt;/p>
+&lt;p>我們直到 Day4 才知道自己到底要做什麼 , 我們最後選定了某一個大學生常用的校務系統 , 並且利用&lt;font color="#f00">已知的套件問題&lt;/font>導致 xss to RCE.&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/H1-kSD2tR.png"
+loading="lazy"
+alt="1722581870654"
+>&lt;/p>
+&lt;h2 id="發表">發表&lt;/h2>
+&lt;p>在發表的時候 , 我主講的部分是 patch 的部分 , 雖然在台上的時候因為&lt;font color="#f00">緊張而加快自己的速度&lt;/font> , 但在整體的發表上都沒有&lt;font color="#f00">太多的錯誤&lt;/font>&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/H1_WLPhKC.png"
+loading="lazy"
+alt="1722647134912"
+>&lt;/p>
+&lt;h2 id="結論反思">結論&amp;amp;反思&lt;/h2>
+&lt;p>在還沒有實際挖掘過產品漏洞前 , 我認為一切都像助教說的那樣容易 . 這一張可以詮釋我的感想xDD&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/r1tlrDnYA.png"
+loading="lazy"
+alt="1722657815589"
+>&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/S12fJd2K0.png"
+loading="lazy"
+alt="1722578839149"
+>&lt;/p>
+&lt;p>雖然在 A9 擔任隊長的我並沒有像其他跟我同年紀的高中生帶領隊友成功取得 Zero Day , 但收穫最多的地方是在&lt;font color="#f00">心態上的調整以及漏洞挖掘的方&lt;/font> . 雖然或多或少有點難過 , 但問題的本質是自己還不夠努力 不夠強 , 我相信: &amp;ldquo;&lt;font color ='#f00'>沒有贏不過的敵人 , 只有滿足於現況而不想精進實力的自己&lt;/font>&amp;rdquo; keep going!&lt;/p>
+&lt;p>最後的最後&lt;/p>
+&lt;p>&lt;img src="https://hackmd.io/_uploads/Bkrb0v2FR.png"
+loading="lazy"
+alt="f4a06dee-43a9-495a-a1fe-27270f204f72"
+>&lt;/p></description></item></channel></rss>

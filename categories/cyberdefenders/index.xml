@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cyberdefenders on dkri3c1's Blog</title><link>https://dkri3c1.github.io/categories/cyberdefenders/</link><description>Recent content in Cyberdefenders on dkri3c1's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dkri3c1.github.io/categories/cyberdefenders/index.xml" rel="self" type="application/rss+xml"/><item><title>Cyberdefenders - WebStrike</title><link>https://dkri3c1.github.io/p/cyberdefenders-webstrike/</link><pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate><guid>https://dkri3c1.github.io/p/cyberdefenders-webstrike/</guid><description>&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/cover.png" alt="Featured image of post Cyberdefenders - WebStrike" />&lt;h2 id="q1">Q1&lt;/h2>
+&lt;p>Understanding the geographical origin of the attack aids in geo-blocking measures and threat intelligence analysis. What city did the attack originate from?&lt;/p>
+&lt;hr>
+&lt;p>先去 &lt;code>conversation&lt;/code> 看有哪些ip&lt;/p>
+&lt;p>&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-1.png"
+width="741"
+height="616"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-1_hu13357700352093164674.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-1_hu2187830346282027830.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="120"
+data-flex-basis="288px"
+>&lt;/p>
+&lt;p>發現只有兩個，於是就去tcp看有沒有攻擊的相關痕跡&lt;br>
+發現 &lt;code>Stream 13&lt;/code> 有
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image.png"
+width="1269"
+height="1033"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image_hu10220196037983501059.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image_hu1768008861293940076.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="122"
+data-flex-basis="294px"
+>&lt;/p>
+&lt;p>接下來就看誰是攻擊者ㄌ
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-2.png"
+width="1268"
+height="1024"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-2_hu17609788336122041694.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-2_hu18248371039569425134.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="123"
+data-flex-basis="297px"
+>&lt;/p>
+&lt;p>答案便是&lt;code>117.11.88.124&lt;/code> 那依據題目的要求我們需要找到攻擊者在哪&lt;/p>
+&lt;p>&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-3.png"
+width="1502"
+height="590"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-3_hu12128503668195554318.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-3_hu2552280918782335018.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="254"
+data-flex-basis="610px"
+>&lt;/p>
+&lt;p>&lt;code>ans : Tianjin&lt;/code>&lt;/p>
+&lt;h2 id="q2">Q2&lt;/h2>
+&lt;p>Knowing the attacker&amp;rsquo;s user-agent assists in creating robust filtering rules. What&amp;rsquo;s the attacker&amp;rsquo;s user agent?&lt;/p>
+&lt;hr>
+&lt;p>點一個&lt;code>HTTP Protocol&lt;/code>的來看
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-4.png"
+width="1265"
+height="1046"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-4_hu10468964216476835379.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-4_hu15205399471922182038.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="120"
+data-flex-basis="290px"
+>&lt;/p>
+&lt;p>&lt;code>ans : Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0&lt;/code>&lt;/p>
+&lt;h2 id="q3">Q3&lt;/h2>
+&lt;p>We need to identify if there were potential vulnerabilities exploited. What&amp;rsquo;s the name of the malicious web shell uploaded?&lt;/p>
+&lt;hr>
+&lt;p>一樣翻一下TCP看攻擊者的攻擊過程&lt;br>
+最後在&lt;code>Stream 5&lt;/code>發現了整個犯案過程ww
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-5.png"
+width="1284"
+height="1046"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-5_hu849829083608176639.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-5_hu14489092777223188164.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="122"
+data-flex-basis="294px"
+>&lt;/p>
+&lt;p>&lt;code>ans : image.jpg.php&lt;/code>&lt;/p>
+&lt;h2 id="q4">Q4&lt;/h2>
+&lt;p>Knowing the directory where files uploaded are stored is important for reinforcing defenses against unauthorized access. Which directory is used by the website to store the uploaded files?&lt;/p>
+&lt;hr>
+&lt;p>同上
+最後在 &lt;code>Stream 9&lt;/code>發現
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-7.png"
+width="1276"
+height="1037"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-7_hu4183354850650596292.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-7_hu18427370424634110744.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="123"
+data-flex-basis="295px"
+>&lt;/p>
+&lt;h2 id="q5">Q5&lt;/h2>
+&lt;p>Identifying the port utilized by the web shell helps improve firewall configurations for blocking unauthorized outbound traffic. What port was used by the malicious web shell?&lt;/p>
+&lt;hr>
+&lt;p>在之前的&lt;code>Stream 5&lt;/code>發現攻擊者上傳的webshell，我們可以觀察上面的payload
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-6.png"
+width="1284"
+height="1032"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-6_hu15734941859421866749.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-6_hu2380577930480791814.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="124"
+data-flex-basis="298px"
+>
+發現他已&lt;code>8080&lt;/code>這個port當webshell&lt;/p>
+&lt;p>&lt;code>ans: 8080&lt;/code>&lt;/p>
+&lt;h2 id="q6">Q6&lt;/h2>
+&lt;p>Understanding the value of compromised data assists in prioritizing incident response actions. What file was the attacker trying to exfiltrate?&lt;/p>
+&lt;hr>
+&lt;p>在之前的&lt;code>Stream 13&lt;/code>看到了他&lt;code>RCE&lt;/code>進去之後輸入的指令
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-8.png"
+width="1272"
+height="1042"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-8_hu4270374287787652276.png 480w, https://dkri3c1.github.io/p/cyberdefenders-webstrike/image-8_hu6042742066917359933.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="122"
+data-flex-basis="292px"
+>
+發現他想要去&lt;code>etc/passwd&lt;/code>拿&lt;code>root&lt;/code>的帳號&lt;br>
+可是這題只讓我們輸入6個字，所以我想了想就輸入&lt;code>passwd&lt;/code>，然後答案就對ㄌ:D&lt;/p>
+&lt;p>&lt;code>ans : passwd&lt;/code>&lt;/p>
+&lt;h2 id="後記">後記&lt;/h2>
+&lt;p>數位鑑識好玩:D&lt;/p></description></item><item><title>Cyberdefenders - OpenWire</title><link>https://dkri3c1.github.io/p/cyberdefenders-openwire/</link><pubDate>Wed, 07 Feb 2024 00:00:00 +0000</pubDate><guid>https://dkri3c1.github.io/p/cyberdefenders-openwire/</guid><description>&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/cover.png" alt="Featured image of post Cyberdefenders - OpenWire" />&lt;h2 id="q1">Q1&lt;/h2>
+&lt;p>By identifying the C2 IP, we can block traffic to and from this IP, helping to contain the breach and prevent further data exfiltration or command execution. Can you provide the IP of the C2 server that communicated with our server?&lt;/p>
+&lt;hr>
+&lt;p>要找出攻擊者的ip我們可以用&lt;code>Endpoint&lt;/code>觀察
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-5.png"
+width="1906"
+height="704"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-5_hu6612759983413491756.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-5_hu14407836225552914116.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="270"
+data-flex-basis="649px"
+>
+點進去發現有兩個ip接受的流量特別多
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-1.png"
+width="1904"
+height="787"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-1_hu13985440807401051481.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-1_hu7464763019154272207.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="241"
+data-flex-basis="580px"
+>
+那我們可以隨便找一下這兩個ip的封包傳輸內容
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-2.png"
+width="1270"
+height="984"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-2_hu11991228869214574801.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-2_hu1817066043668491866.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="129"
+data-flex-basis="309px"
+>
+點進去發現藍色的傳輸內容疑似為攻擊;那我們要怎麼知道藍色的內容是誰給的呢?
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-3.png"
+width="1254"
+height="116"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-3_hu6840242571974377904.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-3_hu4159511207331056315.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="1081"
+data-flex-basis="2594px"
+>
+在左下角可以選
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-4.png"
+width="1282"
+height="1009"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-4_hu4355596718400712513.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-4_hu12334228615376689586.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="127"
+data-flex-basis="304px"
+>&lt;/p>
+&lt;p>&lt;code>answer : 146.190.21.92&lt;/code>&lt;/p>
+&lt;h2 id="q2">Q2&lt;/h2>
+&lt;p>Initial entry points are critical to trace back the attack vector. What is the port number of the service the adversary exploited?&lt;/p>
+&lt;hr>
+&lt;p>去&lt;code>conversation&lt;/code>看
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image.png"
+width="956"
+height="658"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image_hu11016589000121707527.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image_hu11214884904681051624.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="145"
+data-flex-basis="348px"
+>
+點進去然後點TCP
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-6.png"
+width="957"
+height="606"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-6_hu5039904469794441162.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-6_hu3016561297300065033.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="379px"
+>
+會發現在一開始 146.190.21.92這個ip用&lt;code>47284&lt;/code>送東西給134.209.197.3的&lt;code>61616&lt;/code>port&lt;br>
+那答案這樣就出來了&lt;/p>
+&lt;p>&lt;code>ans : 61616&lt;/code>&lt;/p>
+&lt;h2 id="q3">Q3&lt;/h2>
+&lt;p>Following up on the previous question, what is the name of the service found to be vulnerable?&lt;/p>
+&lt;hr>
+&lt;p>撈了很久的Wireshark還是沒找到，最後想說去看看&lt;code>61616&lt;/code>這個port到底在幹嘛
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-7.png"
+width="782"
+height="347"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-7_hu7086521462279277660.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-7_hu13981430585789798444.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="225"
+data-flex-basis="540px"
+>
+結果第一個點進去就找到了
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-8.png"
+width="1579"
+height="447"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-8_hu5810531368404269241.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-8_hu779025960685996731.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="353"
+data-flex-basis="847px"
+>&lt;/p>
+&lt;p>&lt;code>ans : Apache ActiveMQ&lt;/code>&lt;/p>
+&lt;h2 id="q4">Q4&lt;/h2>
+&lt;p>The attacker&amp;rsquo;s infrastructure often involves multiple components. What is the IP of the second C2 server?&lt;/p>
+&lt;hr>
+&lt;p>觀察一下被駭的server有沒有傳送東西給其他陌生的ip 發現確實有
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-9.png"
+width="1920"
+height="219"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-9_hu1830771759358765695.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-9_hu10677375035314506154.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="876"
+data-flex-basis="2104px"
+>
+看一下封包內容
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-10.png"
+width="1277"
+height="797"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-10_hu17160116457156028963.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-10_hu13653198879114048200.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="160"
+data-flex-basis="384px"
+>
+傳了一個叫做&lt;code>docker&lt;/code>檔案給他
+然後再去&lt;code>conversation&lt;/code>看一下server有沒有丟其他東西給陌生的ip
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-11.png"
+width="957"
+height="303"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-11_hu17227612919071453284.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-11_hu10828846251247939513.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="315"
+data-flex-basis="758px"
+>
+發現沒有&lt;br>
+於是就直接輸入ㄌ&lt;/p>
+&lt;p>&lt;code>ans : 128.199.52.72&lt;/code>&lt;/p>
+&lt;h2 id="q5">Q5&lt;/h2>
+&lt;p>Attackers usually leave traces on the disk. What is the name of the reverse shell executable dropped on the server?&lt;/p>
+&lt;hr>
+&lt;p>看一下剛剛那個封包的內容會發現
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-12.png"
+width="1182"
+height="409"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-12_hu3312758020210558841.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-12_hu2904454289506463016.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="288"
+data-flex-basis="693px"
+>
+他在&lt;code>docker&lt;/code>這個檔案裡面輸入bash指令&lt;/p>
+&lt;p>ps:這個&lt;code>docker&lt;/code>是一個ELF執行檔
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-13.png"
+width="1266"
+height="800"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-13_hu1969862098780910894.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-13_hu11128686106423867390.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="158"
+data-flex-basis="379px"
+>&lt;/p>
+&lt;p>&lt;code>ans : docker&lt;/code>&lt;/p>
+&lt;h2 id="q6">Q6&lt;/h2>
+&lt;p>What Java class was invoked by the XML file to run the exploit?&lt;/p>
+&lt;hr>
+&lt;p>一樣再看一下剛剛那個封包
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-14.png"
+width="1091"
+height="550"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-14_hu17085587859675453928.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-14_hu9642579045308268815.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="198"
+data-flex-basis="476px"
+>&lt;/p>
+&lt;p>&lt;code>ans : java.lang.ProcessBuilder&lt;/code>&lt;/p>
+&lt;h2 id="q7">Q7&lt;/h2>
+&lt;p>To better understand the specific security flaw exploited, can you identify the CVE identifier associated with this vulnerability?&lt;/p>
+&lt;hr>
+&lt;p>丟GOOGLE就發現答案ㄌ
+&lt;img src="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-15.png"
+width="1118"
+height="486"
+srcset="https://dkri3c1.github.io/p/cyberdefenders-openwire/image-15_hu15944568046989900661.png 480w, https://dkri3c1.github.io/p/cyberdefenders-openwire/image-15_hu1834469106686510467.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="230"
+data-flex-basis="552px"
+>&lt;/p>
+&lt;p>&lt;code>ans : CVE-2023-46604&lt;/code>&lt;/p>
+&lt;h2 id="q8">Q8&lt;/h2>
+&lt;p>What is the vulnerable Java method and class that allows an attacker to run arbitrary code? (Format: Class.Method)&lt;/p>
+&lt;hr>
+&lt;p>我打不出來T_T&lt;/p>
+&lt;h2 id="後記">後記&lt;/h2>
+&lt;p>基本上快一年多沒有碰wireshark這個鬼東西ㄌ(雖然前陣子T貓的時候有稍微玩一下)，感覺好不熟悉QAQ，希望我能透過練習上面的Lab讓我在分區的時候藍隊不會死那麼慘。&lt;/p></description></item></channel></rss>
