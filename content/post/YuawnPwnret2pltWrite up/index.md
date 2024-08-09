@@ -10,8 +10,6 @@ tags:
 weight: 1       
 ---
 
-
-
 ## 前言:
 
 在繼續 lys rop3 前，我們要先學會 ret2plt ㄉ技巧 :D
@@ -40,7 +38,7 @@ gdb:
 
 ### exploit
 
-```py=
+```py
 from pwn import *
 
 context(arch="amd64")
