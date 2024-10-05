@@ -7,17 +7,6 @@ draft: false
 image: 'image.png'
 ---
 
-
----
-title: pwnable orw & yuawn orw Writes up
-published: 2024-08-07
-tags: [CTF]
-category: Cyber Security
-draft: false
-image: 'image.png'
----
-
-
 ## pwntools Review
 
 設定環境:
