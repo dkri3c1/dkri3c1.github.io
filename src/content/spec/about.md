@@ -1,31 +1,55 @@
 # About
 
-## Activities & Involvement
+## 為什麼想要弄這個網站
 
-### ISIP
-- AIS3 Juniors 2022
-- AIS3 MyFirstCTF 2024 rk.10
-- AIS3 Pre-Exam 2024 rk.143
-- AIS3 2024
-- AIS3 Club 2024 全國資安社團暨社群幹部研習營
-- 臺灣好厲駭第九屆 高階培訓學員
+我是一個很常在活動結束後就忘記一切的金魚腦，於是我打算利用這個 Blog 紀錄在資訊圈上的點點滴滴
 
-### Events
-- SITCON 2022, 2024 會眾
-- CYBERSEC 2022 - 2024 會眾
-- HITCON CMT 2024 會眾
+## 關於我
 
-### Clubs
-- 臺北市數位實驗高中 資訊研究社
-    - 第一屆 `( 社長、創辦者 )`
-    - 第二屆 `( 社長 )`
-- 臺北市數位實驗高中 學生自治會
-    - 第三屆 `( 行政部長 )`
-- 教育部先進資通安全培育計畫 高中職資安教學資源與推廣中心 跨校資安社團
-    - 第一屆 `( 副社長 )`
+嗨嗨,我是dkri3c1,一個就讀於台中某高職資訊科的高三學生，對於資安有不少的興趣，雖然在經歷過技能競賽的洗禮後曾經沈寂了許久，但是熱衷學習資安的他還是選擇繼續向前踏進!
 
-## Education
-- 臺北市數位實驗高級中學
-    - Taipei Digital Experimental High School `( Expected Graduation: June 2026 )`
+## 社群活動
 
-::github{repo="stgst/stgst.github.io"}
+- 2023 HITCON 社群擺攤 中部電資聯合會議SCAICT
+- 2023 AIS3 club
+- 112 中部電資聯合會議SCAICT 資訊組
+- 2024 SITCON 會眾
+- 2024 HITCON 社群擺攤 成大資安社B33F 50UP
+
+## 講者&助教經歷
+
+- 2023 SCAICT十一月主題課程Misc教學講師
+- 2023 SITCON HOC 雲林場助教
+- 30th 文華高中電研資安講師
+- 2024 SCAICT寒訓資安講師
+- 2024 台中高工資訊科職涯探索課程資安講師
+- 2024 一日資訊體驗營  台中場助教
+- 2024 AIS3 Junior 助教
+- ISIP 高中職資安教學資源與推廣中心計畫-跨校資安社團 網路流量分析 講師
+
+## 競賽
+
+- 2023 MyFirstCTF rk.11 user: dkriecl_ue
+- 2023 T貓盃決賽入圍(卡到段考,哭ㄚ) user:dkri3c1
+- 第 54 屆全國技能競賽中區分區賽網路安全 - rk.2 Team: 台中高工
+- 第 54 屆全國技能競賽全國賽網路安全 - rk.6 (佳作) Team: 台中高工
+- 2024 AIS3-Pre-exam rk.45 user: dkri3c1
+
+## 證照
+
+- iPAS 資訊安全工程師 初級
+- iPAS 資訊安全工程師 中級
+- GEPT 全民英檢 初級
+- GEPT 全民英檢 中級
+- 電腦硬體裝修 丙級
+
+
+## 其他
+
+- HITCON ZeroDay 通報 170 個以上漏洞
+- 112台中高工資訊科學會機動組組長
+- 台灣好厲駭學員 8th
+- 戰隊 m0nk3y_1n_tc1vs成員
+- 戰隊 B33F 50UP成員
+- 2024 台灣高中職資安聯合競賽 THJCC CTF 出題者
+- 2024 AIS3新型態資安暑期課程 網頁、軟體及IoT安全-A9 | 關於我們上課交作業交到 xss 那檔事-- CVE-2024-4367 利用
