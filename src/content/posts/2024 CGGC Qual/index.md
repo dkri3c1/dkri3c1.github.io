@@ -7,6 +7,13 @@ draft: false
 image: 'image.png'
 ---
 
+# Before
+
+這一次和隊友打ㄌ CGGC 網路安全挑戰賽的初賽，負責看兩題 Misc 題，也感謝最後靠隊友 carry 進到決賽 uWu
+
+放上一個 ScoreBoard @@
+
+![score](image-1.png)
 
 # Misc
 
