@@ -36,6 +36,7 @@
 - 2024 AIS3-Pre-exam rk.45 user: dkri3c1
 - 2024 CGGC 網路守護者挑戰賽 Qual - rk.7 Team: 金爐香盡漏聲殘，我只剩下半顆肝
 - 2024 CGGC 網路守護者挑戰賽 Final - rk.6 Team: 金爐香盡漏聲殘，我只剩下半顆肝
+
 ## 證照
 
 - iPAS 資訊安全工程師 初級

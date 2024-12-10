@@ -40,7 +40,7 @@ image: 'image.png'
 
 # Prompt Injection
 
-其實大部分的 payload 都是參考 [kazma](https://kazma.tw/)kazma 大大在 Blog 上寫的那些方法，感謝 kazma 讚嘆 kazma !!
+其實大部分的 payload 都是參考 [kazma](https://kazma.tw/) 大大在 Blog 上寫的那些方法，感謝 kazma 讚嘆 kazma !!
 
 ## Prompt Injection 1
 
