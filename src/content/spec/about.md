@@ -49,8 +49,9 @@
 
 - HITCON ZeroDay 通報 170 個以上漏洞
 - 112台中高工資訊科學會機動組組長
-- 台灣好厲駭學員 8th
-- 戰隊 m0nk3y_1n_tc1vs成員
-- 戰隊 B33F 50UP成員
-- 2024 台灣高中職資安聯合競賽 THJCC CTF 出題者
+- 台灣好厲駭學員 8 & 9th
+- 戰隊 Remote Computer Explosion 成員
+- 戰隊 B33F 50UP 成員
+- 戰隊 ICEDTEA 成員
+- 2024 第一屆台灣高中職資安聯合競賽 THJCC CTF 出題者
 - 2024 AIS3新型態資安暑期課程 網頁、軟體及IoT安全-A9 | 關於我們上課交作業交到 xss 那檔事-- CVE-2024-4367 利用
