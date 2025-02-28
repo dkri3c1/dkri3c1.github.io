@@ -43,7 +43,7 @@ ID: dkri3c1
 
 # 面試內容
 
-[可以參考這篇w]()
+[可以參考這篇w](https://dkri3c1.github.io/posts/114-%E7%89%B9%E6%AE%8A%E9%81%B8%E6%89%8D%E9%9D%A2%E8%A9%A6%E5%85%A7%E5%AE%B9/)
 
 # 心得
 
