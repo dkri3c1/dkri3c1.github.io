@@ -33,9 +33,12 @@
 - 2023 T貓盃決賽入圍(卡到段考,哭ㄚ) user: dkri3c1
 - 第 54 屆全國技能競賽中區分區賽網路安全 - rk.2 Team: 台中高工
 - 第 54 屆全國技能競賽全國賽網路安全 - rk.6 (佳作) Team: 台中高工
+- 第 55 屆全國技能競賽中區分區賽網路安全 - rk.2 Team: 台中高工
 - 2024 AIS3-Pre-exam rk.45 user: dkri3c1
 - 2024 CGGC 網路守護者挑戰賽 Qual - rk.7 Team: 金爐香盡漏聲殘，我只剩下半顆肝
 - 2024 CGGC 網路守護者挑戰賽 Final - rk.6 Team: 金爐香盡漏聲殘，我只剩下半顆肝
+- 2025 picoCTF - rk.51 Team: Remote Computer Explosion
+
 
 ## 證照
 
