@@ -10,7 +10,7 @@ image: 'image.png'
 
 ## Before
 
-這一篇是統測前打ㄉ，現在過每天都過得好開心，終於可以做自己想做的事ㄌ，這場是跟 Remote Computer Explosion 一起打的 ，而我主要打ㄉ領域是 Forensics，大概解了4.5題，.5 的部分是因為那一題是和 [p23](https://github.com/pictures2333)一起解ㄉ至於 Misc 我開賽隔一天上去看之後就被打光光ㄌ，都沒有摸到 QQ
+這一篇是統測前打ㄉ，現在每天都過得好開心，終於可以做自己想做的事ㄌ，這場是跟 Remote Computer Explosion 一起打的 ，而我主要打ㄉ領域是 Forensics，大概解了4.5題，.5 的部分是因為那一題是和 [p23](https://github.com/pictures2333)一起解ㄉ至於 Misc 我開賽隔一天上去看之後就被打光光ㄌ，都沒有摸到 QQ
 
 這邊附上一個 Score Board
 
