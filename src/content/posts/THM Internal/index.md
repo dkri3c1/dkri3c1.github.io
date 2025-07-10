@@ -4,7 +4,7 @@ published: 2025-07-10
 tags: [THM]
 category: Cyber Security
 draft: false
-image: 'image.jpg'
+image: 'image.png'
 ---
 
 
