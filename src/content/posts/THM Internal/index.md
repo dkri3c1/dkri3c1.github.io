@@ -1,8 +1,8 @@
 ---
 title: THM Internal
 published: 2025-07-10
-tags: [THM]
-category: Cyber Security
+tags: [THM,Linux]
+category: PenTest
 draft: false
 image: 'image.png'
 ---
