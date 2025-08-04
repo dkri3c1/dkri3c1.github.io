@@ -1,5 +1,5 @@
 ---
-title: THM Zeno
+title: THM Weasel
 published: 2025-08-04
 tags: [THM,Windows]
 category: PenTest
