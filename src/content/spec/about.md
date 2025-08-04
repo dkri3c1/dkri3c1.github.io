@@ -42,6 +42,7 @@
 - 2024 CGGC 網路守護者挑戰賽 Qual - rk.7 Team: 金爐香盡漏聲殘，我只剩下半顆肝
 - 2024 CGGC 網路守護者挑戰賽 Final - rk.6 Team: 金爐香盡漏聲殘，我只剩下半顆肝
 - 2025 picoCTF - rk.51 Team: Remote Computer Explosion
+- 2025 AIS3 網頁、軟體及IoT安全 - 最佳專題獎
 
 ## 漏洞通報
 
@@ -72,3 +73,4 @@
 
 - 台灣好厲駭學員 8 & 9th
 - 2024 AIS3新型態資安暑期課程 網頁、軟體及IoT安全-A9 | 關於我們上課交作業交到 xss 那檔事-- CVE-2024-4367 利用
+- 2025 AIS3新型態資安暑期課程 網頁、軟體及IoT安全-3 | Your Netis Mine 
