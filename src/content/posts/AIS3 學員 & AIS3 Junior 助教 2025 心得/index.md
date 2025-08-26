@@ -14,9 +14,10 @@ image: 'good.png'
 
 今年 Pre-Exam 後兩天跟高中同學跑去小琉球爽 (小琉球真的好漂亮，偷偷附個風景照)
 
-![image1](https://media.discordapp.net/attachments/849173734081953817/1403938945804533821/IMG_3845.jpg?ex=68995f88&is=68980e08&hm=8d747a071b3441843440dc73bd0c8e84ed86889ec5e65e415dd3d394a5b5c468&=&format=webp&width=900&height=1199)
+![image](https://hackmd.io/_uploads/H136mQstxx.png)
 
-![image2](https://media.discordapp.net/attachments/849173734081953817/1403938946559377430/IMG_3807.jpg?ex=68995f88&is=68980e08&hm=1e83b59db45f534637b005100f7cf21892f32bb5fb5f7c0157a192928281197b&=&format=webp&width=900&height=1199)
+
+![image](https://hackmd.io/_uploads/rkV0QQsKel.png)
 
 所以排名差不多在 130 幾，怕自己進不去所以就順便投了甄選，結果最後上了 XDD，然後組別的話選了**軟體及IoT安全**
 
