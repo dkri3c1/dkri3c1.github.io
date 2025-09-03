@@ -37,9 +37,6 @@ importers:
       '@swup/astro':
         specifier: ^1.4.1
         version: 1.6.0(@types/babel__core@7.20.5)
-      astro:
-        specifier: ^4.16.18
-        version: 4.16.18(@types/node@24.1.0)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)(typescript@5.8.3)
       astro-compress:
         specifier: ^2.3.0
         version: 2.3.8(@types/node@24.1.0)(rollup@2.79.2)(sass@1.89.2)(stylus@0.64.0)(typescript@5.8.3)
@@ -149,6 +146,9 @@ importers:
       '@types/sanitize-html':
         specifier: ^2.11.0
         version: 2.16.0
+      astro:
+        specifier: ^4.16.18
+        version: 4.16.18(@types/node@24.1.0)(lightningcss@1.29.3)(rollup@2.79.2)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)(typescript@5.8.3)
       photoswipe:
         specifier: ^5.4.4
         version: 5.4.4
@@ -6827,7 +6827,7 @@ snapshots:
       unist-util-visit: 5.0.0
       vfile: 6.0.3
       vite: 5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.39.0)
-      vitefu: 1.1.1(vite@5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1))
+      vitefu: 1.1.1(vite@5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.39.0))
       which-pm: 3.0.1
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -10436,6 +10436,10 @@ snapshots:
   vitefu@0.2.5(vite@5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)):
     optionalDependencies:
       vite: 5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)
+
+  vitefu@1.1.1(vite@5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.39.0)):
+    optionalDependencies:
+      vite: 5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.39.0)
 
   vitefu@1.1.1(vite@5.4.19(@types/node@24.1.0)(lightningcss@1.29.3)(sass@1.89.2)(stylus@0.64.0)(terser@5.43.1)):
     optionalDependencies:
