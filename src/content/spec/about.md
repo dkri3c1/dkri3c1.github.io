@@ -43,6 +43,7 @@
 - 2024 CGGC 網路守護者挑戰賽 Final - rk.6 Team: 金爐香盡漏聲殘，我只剩下半顆肝
 - 2025 picoCTF - rk.51 Team: Remote Computer Explosion
 - 2025 AIS3 網頁、軟體及IoT安全 - 最佳專題獎
+- 114 教育體系資安攻防演練之檢測員 - rk.15 (佳作)
 
 ## 漏洞通報
 
