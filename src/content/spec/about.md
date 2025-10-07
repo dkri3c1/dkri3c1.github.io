@@ -44,6 +44,8 @@
 - 2025 picoCTF - rk.51 Team: Remote Computer Explosion
 - 2025 AIS3 網頁、軟體及IoT安全 - 最佳專題獎
 - 114 教育體系資安攻防演練之檢測員 - rk.15 (佳作)
+- 2025 AEGIS CTF 資安神盾杯 Qual - rk.7 Team: 在小小的實驗室裡挖阿挖阿挖
+
 
 ## 漏洞通報
 
