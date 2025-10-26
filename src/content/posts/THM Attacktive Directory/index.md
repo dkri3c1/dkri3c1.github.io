@@ -1,3 +1,13 @@
+---
+title: THM Attacktive Directory
+published: 2025-10-26
+tags: [THM,Windows,AD]
+category: PenTest
+draft: false
+image: 'image.png'
+---
+
+
 ## Recon
 
 ```bash
