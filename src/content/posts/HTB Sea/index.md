@@ -1,6 +1,6 @@
 ---
 title: HTB Sea
-published: 2025-09-03
+published: 2026-01-20
 tags: [HTB,Linux]
 category: PenTest
 draft: false
