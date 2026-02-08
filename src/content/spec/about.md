@@ -47,11 +47,18 @@
 - 2025 AEGIS CTF 資安神盾杯 Qual - rk.7 Team: 在小小的實驗室裡挖阿挖阿挖
 - 第20屆資安技能金盾獎競賽 - 決賽入圍 Team: CHW的學弟我們的夢想
 - 2025 AIS3 EOF Qual rk.6 Team: 揪麥當勞買一送一，要訂的下面接龍
+- 2025 AIS3 EOF Final rk.9 Team: 揪麥當勞買一送一，要訂的下面接龍
 
 ## 漏洞通報
 
 - HITCON ZeroDay 通報 170 個以上漏洞
 - 114 教育體系資安攻防演練之檢測員
+
+## Bounty
+
+- erotogenic E html injection
+- 立督科技股份有限公司 SQL Injection & Reflected Xss 
+
 
 
 ## CTF 出題
