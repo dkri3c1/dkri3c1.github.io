@@ -1,16 +1,12 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
 
-  const username = import.meta.env.PUBLIC_LASTFM_USERNAME;
-  const apiKey = import.meta.env.PUBLIC_LASTFM_API_KEY;
   const discordId = import.meta.env.PUBLIC_DISCORD_ID;
 
-  const useLastFm = username && apiKey && username !== 'your_username' && apiKey !== 'your_api_key';
   const useLanyard = discordId && discordId !== 'your_discord_id';
-  const isConfigured = useLastFm || useLanyard;
+  const isConfigured = useLanyard;
 
   let currentTrack = null;
-  let recentTracks = [];
   let isPlaying = false;
   let isLoading = true;
   let errorMsg = null;
@@ -31,62 +27,36 @@
   async function fetchSpotifyStatus() {
     if (!isConfigured) return;
     try {
-      if (useLastFm) {
-        // Last.fm Logic (Full Experience: Now Playing + Recent Tracks)
-        const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=5`;
-        const res = await fetch(url);
-        if (!res.ok) throw new Error('無法取得 Last.fm 音樂播放狀態');
-        
-        const data = await res.json();
-        if (data.error) throw new Error(data.message);
-        
-        const fetchedTracks = data.recenttracks?.track || [];
-        if (fetchedTracks.length > 0) {
-          const first = fetchedTracks[0];
-          const isNowPlaying = first['@attr'] && first['@attr'].nowplaying === 'true';
-          
-          isPlaying = isNowPlaying;
-          currentTrack = first;
-          recentTracks = fetchedTracks.slice(1, 5);
-        } else {
-          currentTrack = null;
-          recentTracks = [];
-          isPlaying = false;
+      const url = `https://api.lanyard.rest/v1/users/${discordId}`;
+      const res = await fetch(url);
+      if (!res.ok) {
+        if (res.status === 404) {
+          throw new Error('找不到該 Discord 使用者 (404)。請確認您已加入 Lanyard Discord 伺服器 (discord.gg/lanyard)！');
         }
-      } else if (useLanyard) {
-        // Discord Lanyard Logic (Zero Keys, Live Currently Playing only)
-        const url = `https://api.lanyard.rest/v1/users/${discordId}`;
-        const res = await fetch(url);
-        if (!res.ok) {
-          if (res.status === 404) {
-            throw new Error('找不到該 Discord 使用者 (404)。請確認您已加入 Lanyard Discord 伺服器 (discord.gg/lanyard)！');
-          }
-          throw new Error('無法取得 Lanyard 狀態');
-        }
-        
-        const data = await res.json();
-        if (!data.success) throw new Error('Lanyard API 請求失敗');
-        
-        const lanyardData = data.data;
-        isPlaying = lanyardData.listening_to_spotify;
-        
-        if (isPlaying && lanyardData.spotify) {
-          const spotify = lanyardData.spotify;
-          currentTrack = {
-            name: spotify.song,
-            artist: { '#text': spotify.artist },
-            album: { '#text': spotify.album },
-            image: [
-              { '#text': spotify.album_art_url },
-              { '#text': spotify.album_art_url },
-              { '#text': spotify.album_art_url }
-            ],
-            url: `https://open.spotify.com/track/${spotify.track_id}`
-          };
-        } else {
-          currentTrack = null;
-        }
-        recentTracks = []; // Lanyard doesn't support historic scrobbles
+        throw new Error('無法取得 Lanyard 狀態');
+      }
+
+      const data = await res.json();
+      if (!data.success) throw new Error('Lanyard API 請求失敗');
+
+      const lanyardData = data.data;
+      isPlaying = lanyardData.listening_to_spotify;
+
+      if (isPlaying && lanyardData.spotify) {
+        const spotify = lanyardData.spotify;
+        currentTrack = {
+          name: spotify.song,
+          artist: { '#text': spotify.artist },
+          album: { '#text': spotify.album },
+          image: [
+            { '#text': spotify.album_art_url },
+            { '#text': spotify.album_art_url },
+            { '#text': spotify.album_art_url }
+          ],
+          url: `https://open.spotify.com/track/${spotify.track_id}`
+        };
+      } else {
+        currentTrack = null;
       }
       errorMsg = null;
     } catch (e) {
@@ -121,25 +91,16 @@
     </div>
     <h3 class="text-base font-bold text-90">Spotify 播放狀態</h3>
     <p class="text-xs text-50 mt-1 max-w-md">
-      請在專案根目錄的 <code class="px-1.5 py-0.5 rounded bg-[var(--inline-code-bg)] text-[var(--inline-code-color)] font-mono text-[10px]">.env</code> 檔案中選擇<b>其中一種方式</b>來設定您的 Spotify 串接：
+      請在專案根目錄的 <code class="px-1.5 py-0.5 rounded bg-[var(--inline-code-bg)] text-[var(--inline-code-color)] font-mono text-[10px]">.env</code> 檔案中設定您的 Discord ID，讓 Lanyard 回傳 Spotify 狀態：
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 w-full max-w-2xl text-left">
+    <div class="mt-4 w-full max-w-2xl text-left">
       <div class="p-3 bg-black/5 dark:bg-white/5 rounded-lg border border-[var(--line-divider)] flex flex-col justify-between">
         <div>
-          <h4 class="text-xs font-bold text-[#1DB954] mb-1">方法 A：使用 Discord Lanyard (免金鑰)</h4>
-          <p class="text-[11px] text-50">最快設定！只需輸入您的 Discord ID，並確保 Discord 已連結 Spotify 且正在背景執行。</p>
+          <h4 class="text-xs font-bold text-[#1DB954] mb-1">Discord Lanyard (免金鑰)</h4>
+          <p class="text-[11px] text-50">只會顯示「正在播放 / 沒有播放」兩種狀態。請確保 Discord 已連結 Spotify，且 Lanyard 可讀取到你的帳號。</p>
         </div>
         <pre class="mt-2.5 p-2 bg-[var(--codeblock-bg)] text-[var(--btn-content)] rounded text-[10px] font-mono overflow-x-auto">PUBLIC_DISCORD_ID=您的DiscordID</pre>
-      </div>
-      
-      <div class="p-3 bg-black/5 dark:bg-white/5 rounded-lg border border-[var(--line-divider)] flex flex-col justify-between">
-        <div>
-          <h4 class="text-xs font-bold text-[#1DB954] mb-1">方法 B：使用 Last.fm (支援近期播放)</h4>
-          <p class="text-[11px] text-50">支援顯示離線時的近期播歌清單。需註冊 Last.fm 帳號並申請 API Key。</p>
-        </div>
-        <pre class="mt-2.5 p-2 bg-[var(--codeblock-bg)] text-[var(--btn-content)] rounded text-[10px] font-mono overflow-x-auto">PUBLIC_LASTFM_USERNAME=您的帳號
-PUBLIC_LASTFM_API_KEY=您的金鑰</pre>
       </div>
     </div>
   </div>
@@ -255,52 +216,6 @@ PUBLIC_LASTFM_API_KEY=您的金鑰</pre>
       </div>
     </div>
 
-    <!-- Recently Played list -->
-    {#if recentTracks.length > 0}
-      <div class="border-t border-[var(--line-divider)] pt-5 mt-1">
-        <h5 class="text-xs font-bold text-75 mb-3 tracking-wider uppercase flex items-center gap-2">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-          </svg>
-          最近播過的歌
-        </h5>
-        
-        <div class="grid gap-2">
-          {#each recentTracks as track}
-            <div class="flex items-center justify-between gap-4 p-1.5 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 transition duration-150 group">
-              <div class="flex items-center gap-3 min-w-0">
-                <!-- Thumbnail -->
-                <div class="w-8 h-8 rounded overflow-hidden flex-shrink-0 bg-neutral-900">
-                  {#if track.image && track.image[1]['#text']}
-                    <img src={track.image[1]['#text']} alt={track.name} class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
-                  {:else}
-                    <div class="w-full h-full flex items-center justify-center bg-neutral-800 text-neutral-500">
-                      <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm0-4h-2V7h2v7z"/>
-                      </svg>
-                    </div>
-                  {/if}
-                </div>
-                <!-- Track details -->
-                <div class="min-w-0">
-                  <p class="text-xs font-bold text-90 truncate group-hover:text-[var(--primary)] transition">
-                    <a href={track.url} target="_blank" rel="noopener noreferrer" class="hover:underline">
-                      {track.name}
-                    </a>
-                  </p>
-                  <p class="text-[10px] text-50 truncate">{track.artist['#text']}</p>
-                </div>
-              </div>
-              
-              <!-- Date -->
-              <span class="text-[10px] text-30 font-mono whitespace-nowrap">
-                {formatRelativeTime(track.date?.uts)}
-              </span>
-            </div>
-          {/each}
-        </div>
-      </div>
-    {/if}
   </div>
 {/if}
 
