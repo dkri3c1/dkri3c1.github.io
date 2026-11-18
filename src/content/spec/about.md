@@ -97,3 +97,4 @@
 
 - NTUT is1ab Web 組 組員
 - 2026 DEVCORE 全國資訊安全獎學金
+- 2027 GCC 台灣代表
